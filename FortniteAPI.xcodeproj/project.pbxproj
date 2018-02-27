@@ -17,6 +17,8 @@
 		D8650CE52019550700604685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8650CE32019550700604685 /* LaunchScreen.storyboard */; };
 		D8650CF02019550700604685 /* FortniteAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8650CEF2019550700604685 /* FortniteAPITests.swift */; };
 		D8650CFB2019550700604685 /* FortniteAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8650CFA2019550700604685 /* FortniteAPIUITests.swift */; };
+		D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */; };
+		D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D8650CF62019550700604685 /* FortniteAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8650CFA2019550700604685 /* FortniteAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteAPIUITests.swift; sourceTree = "<group>"; };
 		D8650CFC2019550700604685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerApiManager.swift; sourceTree = "<group>"; };
 		DE6275DE40CCBD955F01EB01 /* Pods_FortniteAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B5FB2A7475B8870DC5A666 /* Pods_FortniteAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,12 +141,13 @@
 		D8650CD92019550700604685 /* FortniteAPI */ = {
 			isa = PBXGroup;
 			children = (
+				D8A7B9752044CDC500DC39CC /* View Controllers */,
 				D8650CDA2019550700604685 /* AppDelegate.swift */,
-				D8650CDC2019550700604685 /* ViewController.swift */,
 				D8650CDE2019550700604685 /* Main.storyboard */,
 				D8650CE32019550700604685 /* LaunchScreen.storyboard */,
 				D8650CE12019550700604685 /* Assets.xcassets */,
 				D8650CE62019550700604685 /* Info.plist */,
+				D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */,
 			);
 			path = FortniteAPI;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				D8650CFC2019550700604685 /* Info.plist */,
 			);
 			path = FortniteAPIUITests;
+			sourceTree = "<group>";
+		};
+		D8A7B9752044CDC500DC39CC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8650CDC2019550700604685 /* ViewController.swift */,
+				D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +474,8 @@
 			files = (
 				D8650CDD2019550700604685 /* ViewController.swift in Sources */,
 				D8650CDB2019550700604685 /* AppDelegate.swift in Sources */,
+				D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */,
+				D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
