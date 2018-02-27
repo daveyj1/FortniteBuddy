@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var wins = ""
     var survivalTime = ""
     var kills = ""
-    var working: Bool!
+    var working = true
     
     
     override func viewDidLoad() {
@@ -73,6 +73,7 @@ class ViewController: UIViewController {
                 OperationQueue.main.addOperation {
                     if self.working {
                         self.usernameLabel.text = self.username
+                        //self.usernameLabel.font = "BurbankBigCondensed-Bold" as! UIFont
                         self.winsLabel.text = "Wins: \(self.wins)"
                         self.killsLabel.text = "Kills: \(self.kills)"
                         self.survivalTimeLabel.text = "Survival Time: \(self.survivalTime)"
