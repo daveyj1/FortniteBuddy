@@ -207,7 +207,7 @@
                                 <color key="textColor" red="0.91229153429999998" green="1" blue="0.98332805810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score/Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okE-o0-dSp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score per Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okE-o0-dSp">
                                 <rect key="frame" x="16" y="401" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -220,7 +220,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="KillsPerMatchLabel" destination="Bf3-f8-Qnw" id="Ekd-Lq-dsu"/>
+                        <outlet property="ScorePerMatchLabel" destination="okE-o0-dSp" id="foX-Wz-ibD"/>
+                        <outlet property="killDeathLabel" destination="254-9N-7IX" id="rfi-My-NAS"/>
                         <outlet property="killsLabel" destination="j8Z-9m-AVK" id="gAs-nb-cDV"/>
+                        <outlet property="scoreLabel" destination="iOO-ek-Iqz" id="0X7-87-E6s"/>
                         <outlet property="survivalTimeLabel" destination="dT6-NV-N2f" id="BDP-e1-c8b"/>
                         <outlet property="usernameLabel" destination="RRG-pL-2jb" id="d9s-7q-m7R"/>
                         <outlet property="winsLabel" destination="i9h-IF-yTh" id="twf-h3-yH2"/>

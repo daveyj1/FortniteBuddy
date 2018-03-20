@@ -16,18 +16,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var winsLabel: UILabel!
     @IBOutlet weak var survivalTimeLabel: UILabel!
     @IBOutlet weak var killsLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var killDeathLabel: UILabel!
+    @IBOutlet weak var KillsPerMatchLabel: UILabel!
+    @IBOutlet weak var ScorePerMatchLabel: UILabel!
+    
     
     //var games:
     var username = ""
     var wins = ""
     var survivalTime = ""
     var kills = ""
+    var score = ""
+    var killDeath = ""
+    var kpm = ""
+    var spm = ""
     var working = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getStats()
         getSoloStats()
     }
     
@@ -47,7 +55,6 @@ class ViewController: UIViewController {
                     return
                 }
                 
-                
                 if let error = json["error"] as? String {
                     if error == "Player Not Found" {
                         print("player not found")
@@ -58,17 +65,79 @@ class ViewController: UIViewController {
                 guard let soloJSON = json["stats"] as? [String: Any] else {
                    return
                 }
-                
                 guard let currP2 = soloJSON["curr_p2"] as? [String: Any] else {
                     return
                 }
-                print(currP2)
+                
+                //GETTING ALL THE VALUES FOR THE LABELS
+                //=====================================
+                if let user = json["epicUserHandle"]! as? String {
+                    self.username = user
+                }
+                
+                guard let wins = currP2["top1"] as? [String: Any] else {
+                    return
+                }
+                self.wins = wins["displayValue"]! as! String
+                
+                guard let avgPlay = currP2["avgTimePlayed"] as? [String: Any] else {
+                    return
+                }
+                self.survivalTime = avgPlay["displayValue"]! as! String
+                
+                guard let kills = currP2["kills"] as? [String: Any] else {
+                    return
+                }
+                self.kills = kills["displayValue"]! as! String
+                
+                guard let score = currP2["score"] as? [String: Any] else {
+                    return
+                }
+                self.score = score["displayValue"]! as! String
+                
+                guard let killDeath = currP2["kd"] as? [String: Any] else {
+                    return
+                }
+                self.killDeath = killDeath["displayValue"]! as! String
+                
+                guard let kpm = currP2["kpg"] as? [String: Any] else {
+                    return
+                }
+                self.kpm = kpm["displayValue"]! as! String
+                
+                guard let spm = currP2["scorePerMatch"] as? [String: Any] else {
+                    return
+                }
+                self.spm = spm["displayValue"]! as! String
+                //==================================
+                
+                /*
                 for (key, _) in currP2 {
                     print(key)
                 }
-    
+                */
             }
-            
+            OperationQueue.main.addOperation {
+                if self.working {
+                    self.usernameLabel.text = self.username
+                    self.winsLabel.text = "Wins: \(self.wins)"
+                    self.killsLabel.text = "Kills: \(self.kills)"
+                    self.survivalTimeLabel.text = "Survival Time: \(self.survivalTime)"
+                    self.scoreLabel.text = "Score: \(self.score)"
+                    self.killDeathLabel.text = "Kill/Death: \(self.killDeath)"
+                    self.KillsPerMatchLabel.text = "Kills per Match: \(self.kpm)"
+                    self.ScorePerMatchLabel.text = "Score per Match: \(self.spm)"
+                } else {
+                    self.usernameLabel.text = "Player Not Found"
+                    self.winsLabel.text = "Wins: NA"
+                    self.killsLabel.text = "Kills: NA"
+                    self.survivalTimeLabel.text = "Survival Time: NA"
+                    self.scoreLabel.text = "Score: NA"
+                    self.killDeathLabel.text = "Kill/Death: NA"
+                    self.KillsPerMatchLabel.text = "Kills per Match: NA"
+                    self.ScorePerMatchLabel.text = "Score per Match: NA"
+                }
+            }
         }
         task.resume()
     }
