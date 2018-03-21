@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     //var games:
     var username = ""
+    var console = ""
     var wins = ""
     var survivalTime = ""
     var kills = ""
@@ -43,7 +44,8 @@ class ViewController: UIViewController {
     }
     
     func getSoloStats() {
-        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/pc/\(username)")
+        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)")
+        print(urlString)
         var req: URLRequest = URLRequest.init(url: urlString!)
         req.setValue("7c57a9c5-6600-4e0f-a292-74a02cc1bcb6", forHTTPHeaderField: "TRN-Api-Key")
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
