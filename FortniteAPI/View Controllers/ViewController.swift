@@ -127,7 +127,7 @@ class ViewController: UIViewController {
                     self.usernameLabel.text = self.username
                     self.winsLabel.text = "Wins: \(self.wins)"
                     self.killsLabel.text = "Kills: \(self.kills)"
-                    self.survivalTimeLabel.text = "Survival Time: \(self.survivalTime)"
+                    self.survivalTimeLabel.text = "Average Match Time: \(self.survivalTime)"
                     self.scoreLabel.text = "Score: \(self.score)"
                     self.killDeathLabel.text = "Kill/Death: \(self.killDeath)"
                     self.KillsPerMatchLabel.text = "Kills per Match: \(self.kpm)"
@@ -230,7 +230,7 @@ class ViewController: UIViewController {
                     self.usernameLabel.text = self.username
                     self.winsLabel.text = "Wins: \(self.wins)"
                     self.killsLabel.text = "Kills: \(self.kills)"
-                    self.survivalTimeLabel.text = "Survival Time: \(self.survivalTime)"
+                    self.survivalTimeLabel.text = "Average Match Time: \(self.survivalTime)"
                     self.scoreLabel.text = "Score: \(self.score)"
                     self.killDeathLabel.text = "Kill/Death: \(self.killDeath)"
                     self.KillsPerMatchLabel.text = "Kills per Match: \(self.kpm)"
@@ -333,7 +333,7 @@ class ViewController: UIViewController {
                     self.usernameLabel.text = self.username
                     self.winsLabel.text = "Wins: \(self.wins)"
                     self.killsLabel.text = "Kills: \(self.kills)"
-                    self.survivalTimeLabel.text = "Survival Time: \(self.survivalTime)"
+                    self.survivalTimeLabel.text = "Average Match Time: \(self.survivalTime)"
                     self.scoreLabel.text = "Score: \(self.score)"
                     self.killDeathLabel.text = "Kill/Death: \(self.killDeath)"
                     self.KillsPerMatchLabel.text = "Kills per Match: \(self.kpm)"

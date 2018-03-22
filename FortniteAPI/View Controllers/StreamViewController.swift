@@ -52,30 +52,6 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            
-            
-            /*
-            guard let channels = self.streams[0] as? [String: Any] else {
-                print("Bad Channel")
-                return
-            }
-            guard let channelInfo = channels["channel"] as? [String: Any] else {
-                print("Bad Info")
-                return
-            }
-            */
-            
-            //print(channelInfo["url"])
-            //dump(channelInfo)
-            
-            
-            /*
-            print(channels["name"])
-            print(channels["url"])
-            print(channels["viewers"])
-            print(channels["profile_banner"])
-            */
-            
             /*
             for (key, _) in streams {
                 print("d")
@@ -94,6 +70,13 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 130
     }
     
+    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! StreamCell
+        print(cell.streamLink)
+    }
+    */
+ 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StreamCell") as! StreamCell
         guard let channel = streams[indexPath.row] as? [String: Any] else {
@@ -104,8 +87,6 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print("NO INFO")
             return cell
         }
-        
-        print(channel)
         
         let viewers = channel["viewers"]
         
@@ -130,5 +111,15 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let cell2 = tableView.cellForRow(at: indexPath) as! StreamCell
+            let vc = segue.destination as! TwitchViewController
+            vc.urlString = cell2.streamLink
+        }
+        
     }
 }
