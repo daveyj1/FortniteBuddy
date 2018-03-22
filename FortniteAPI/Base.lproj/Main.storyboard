@@ -169,7 +169,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cJb-Rc-b4S"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Live Streams" id="NXf-bc-IrW"/>
+                    <navigationItem key="navigationItem" title="Fortnite Live Streams" id="NXf-bc-IrW"/>
                     <connections>
                         <outlet property="tableView" destination="Nwt-kW-3uz" id="6mz-FK-abK"/>
                     </connections>

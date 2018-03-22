@@ -49,7 +49,10 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
             
             self.streams = temp
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
             
             /*
             guard let channels = self.streams[0] as? [String: Any] else {
@@ -84,7 +87,7 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return streams.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,7 +95,6 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        sleep(2)
         let cell = tableView.dequeueReusableCell(withIdentifier: "StreamCell") as! StreamCell
         guard let channel = streams[indexPath.row] as? [String: Any] else {
             print("NO CHANNEL")
