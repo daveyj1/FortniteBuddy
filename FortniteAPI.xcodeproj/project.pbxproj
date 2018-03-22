@@ -20,6 +20,7 @@
 		D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */; };
 		D8A7B9772044DF3300DC39CC /* BurbankBigCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8A7B9762044DCEE00DC39CC /* BurbankBigCondensed-Bold.otf */; };
 		D8CDAB042063120A00FA50F2 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDAB032063120A00FA50F2 /* StreamViewController.swift */; };
+		D8CDAB06206366B300FA50F2 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDAB05206366B300FA50F2 /* StreamCell.swift */; };
 		D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D8A7B9762044DCEE00DC39CC /* BurbankBigCondensed-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Bold.otf"; sourceTree = "<group>"; };
 		D8CDAB032063120A00FA50F2 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		D8CDAB05206366B300FA50F2 /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerApiManager.swift; sourceTree = "<group>"; };
 		DE6275DE40CCBD955F01EB01 /* Pods_FortniteAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B5FB2A7475B8870DC5A666 /* Pods_FortniteAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 				D8650CDC2019550700604685 /* ViewController.swift */,
 				D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */,
 				D8CDAB032063120A00FA50F2 /* StreamViewController.swift */,
+				D8CDAB05206366B300FA50F2 /* StreamCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8CDAB042063120A00FA50F2 /* StreamViewController.swift in Sources */,
+				D8CDAB06206366B300FA50F2 /* StreamCell.swift in Sources */,
 				D8650CDD2019550700604685 /* ViewController.swift in Sources */,
 				D8650CDB2019550700604685 /* AppDelegate.swift in Sources */,
 				D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */,
