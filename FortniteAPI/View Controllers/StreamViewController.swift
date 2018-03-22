@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,7 +22,7 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 50
+        tableView.estimatedRowHeight = 100
         
         getStreams()
     }
@@ -48,6 +49,7 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
             
             self.streams = temp
+            self.tableView.reloadData()
             
             /*
             guard let channels = self.streams[0] as? [String: Any] else {
@@ -82,16 +84,48 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        sleep(5)
+        sleep(2)
         let cell = tableView.dequeueReusableCell(withIdentifier: "StreamCell") as! StreamCell
-        print(self.streams)
-        let channel = streams[indexPath.row] as? [String: Any]
-        let channelInfo = channel!["channel"] as? [String: Any]
-        //cell.nameLabel.text = channelInfo!["name"] as! String
+        guard let channel = streams[indexPath.row] as? [String: Any] else {
+            print("NO CHANNEL")
+            return cell
+        }
+        guard let channelInfo = channel["channel"] as? [String: Any] else {
+            print("NO INFO")
+            return cell
+        }
+        
+        print(channel)
+        
+        let viewers = channel["viewers"]
+        
+        if let name = channelInfo["display_name"] as? String {
+            cell.nameLabel.text = name
+        }
+        if let status = channelInfo["status"] as? String {
+            cell.statusLabel.text = status
+        }
+        if let logo = channelInfo["logo"] as? String {
+            let logoURL = URL(string: logo)!
+            cell.profileImage.af_setImage(withURL: logoURL)
+            cell.profileImage.layer.cornerRadius = 10
+        }
+        if viewers != nil {
+            cell.viewerLabel.text = "\(String(describing: viewers!)) viewers"
+        }
+        if let url = channelInfo["url"] as? String {
+            cell.streamLink = url
+        } else {
+            print("URL NOT SET")
+        }
         
         return cell
     }

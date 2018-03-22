@@ -10,9 +10,11 @@ import UIKit
 
 class StreamCell: UITableViewCell {
     
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var viewerLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    var streamLink: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()

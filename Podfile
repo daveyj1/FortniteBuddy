@@ -7,6 +7,7 @@ target 'FortniteAPI' do
 
   # Pods for FortniteAPI
   pod 'Alamofire', '~> 4.6'
+  pod 'AlamofireImage'
 
   target 'FortniteAPITests' do
     inherit! :search_paths
