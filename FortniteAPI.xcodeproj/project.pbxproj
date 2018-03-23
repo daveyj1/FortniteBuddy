@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2DF170D03851DCDCDE8981DD /* Pods_FortniteAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6275DE40CCBD955F01EB01 /* Pods_FortniteAPI.framework */; };
 		7428A7FD76EF4A2917E47C83 /* Pods_FortniteAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B5FB2A7475B8870DC5A666 /* Pods_FortniteAPITests.framework */; };
+		7C06502420655CB2000B4F7A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06502320655CB2000B4F7A /* NewsViewController.swift */; };
 		B8828ECAB3CDA67669E2B1BC /* Pods_FortniteAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB366B5EF3FCF32148DFD5DF /* Pods_FortniteAPIUITests.framework */; };
 		D85EC2C8206448D300C19865 /* TwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC2C7206448D300C19865 /* TwitchViewController.swift */; };
 		D8650CDB2019550700604685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8650CDA2019550700604685 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		4F01D9F7680FE1FE0380D11E /* Pods-FortniteAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteAPIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteAPIUITests/Pods-FortniteAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5357BF490645CA90CD1A371A /* Pods-FortniteAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteAPITests/Pods-FortniteAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7306DE0C5BE6C16163F6C6DC /* Pods-FortniteAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteAPIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteAPIUITests/Pods-FortniteAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C06502320655CB2000B4F7A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		8FFBE1E8249640DB4AC2E3C7 /* Pods-FortniteAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteAPITests/Pods-FortniteAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB366B5EF3FCF32148DFD5DF /* Pods_FortniteAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85EC2C7206448D300C19865 /* TwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				D8CDAB032063120A00FA50F2 /* StreamViewController.swift */,
 				D8CDAB05206366B300FA50F2 /* StreamCell.swift */,
 				D85EC2C7206448D300C19865 /* TwitchViewController.swift */,
+				7C06502320655CB2000B4F7A /* NewsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				D8650CDB2019550700604685 /* AppDelegate.swift in Sources */,
 				D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */,
 				D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */,
+				7C06502420655CB2000B4F7A /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

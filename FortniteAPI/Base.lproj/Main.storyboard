@@ -24,8 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-ME-yQt">
-                                <rect key="frame" x="16" y="151" width="192" height="62"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-ME-yQt">
+                                <rect key="frame" x="16" y="151" width="192" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84018684336562866" green="0.8361279697261812" blue="0.84424571700507611" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="textColor"/>
@@ -207,6 +207,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUp-uO-uUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="580" y="1027.736131934033"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="cNP-LH-FuQ">
+            <objects>
+                <viewController id="e9H-Ln-cjR" customClass="NewsViewController" customModule="FortniteAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSa-yX-4Eu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQQ-3n-LsA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yu5-6d-6ZB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qbl-Xe-qhf"/>
+                    <connections>
+                        <outlet property="newsWebView" destination="DQQ-3n-LsA" id="AIs-of-zTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgc-aV-06v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="1808.5457271364319"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="QxB-XB-pzV">
+            <objects>
+                <navigationController id="MIS-iS-2hn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" id="tlY-pG-E0h"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3v-zK-HzS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="e9H-Ln-cjR" kind="relationship" relationship="rootViewController" id="Bru-Fg-xJV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2R-le-QjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="1810"/>
         </scene>
         <!--Twitch View Controller-->
         <scene sceneID="6gG-mB-tQr">
@@ -406,6 +449,7 @@
                     <connections>
                         <segue destination="cnG-XU-Bif" kind="relationship" relationship="viewControllers" id="beh-hE-2Iy"/>
                         <segue destination="A5f-Se-jdR" kind="relationship" relationship="viewControllers" id="Inv-9s-rOO"/>
+                        <segue destination="MIS-iS-2hn" kind="relationship" relationship="viewControllers" id="uAg-dg-9RG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWR-3s-NOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
