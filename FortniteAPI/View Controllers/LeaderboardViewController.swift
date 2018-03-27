@@ -34,7 +34,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeaderboardCell") as! LeaderboardCell
         cell.usernameLabel.text = players[indexPath.row]
-        cell.rankLabel.text = String(indexPath.row+1)
+        cell.rankLabel.text = "#\(String(indexPath.row+1))"
         
         return cell
     }

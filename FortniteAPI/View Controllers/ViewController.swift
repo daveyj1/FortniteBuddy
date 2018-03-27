@@ -44,9 +44,13 @@ class ViewController: UIViewController {
     }
     
     func getSoloStats() {
-        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)")
-        print(urlString)
-        var req: URLRequest = URLRequest.init(url: urlString!)
+        let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
+        let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        guard let urlString = URL(string: encoded) else {
+            print("https://api.fortnitetracker.com/v1/profile/\(console)/\(username)")
+            return
+        }
+        var req: URLRequest = URLRequest.init(url: urlString)
         req.setValue("7c57a9c5-6600-4e0f-a292-74a02cc1bcb6", forHTTPHeaderField: "TRN-Api-Key")
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
             if error != nil {
@@ -148,8 +152,12 @@ class ViewController: UIViewController {
     }
     
     func getDuoStats() {
-        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/pc/\(username)")
-        var req: URLRequest = URLRequest.init(url: urlString!)
+        let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
+        let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        guard let urlString = URL(string: encoded) else {
+            return
+        }
+        var req: URLRequest = URLRequest.init(url: urlString)
         req.setValue("7c57a9c5-6600-4e0f-a292-74a02cc1bcb6", forHTTPHeaderField: "TRN-Api-Key")
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
             if error != nil {
@@ -251,8 +259,12 @@ class ViewController: UIViewController {
     }
     
     func getSquadStats() {
-        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/pc/\(username)")
-        var req: URLRequest = URLRequest.init(url: urlString!)
+        let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
+        let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        guard let urlString = URL(string: encoded) else {
+            return
+        }
+        var req: URLRequest = URLRequest.init(url: urlString)
         req.setValue("7c57a9c5-6600-4e0f-a292-74a02cc1bcb6", forHTTPHeaderField: "TRN-Api-Key")
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
             if error != nil {
@@ -354,8 +366,12 @@ class ViewController: UIViewController {
     }
     
     func getStats() {
-        let urlString = URL(string: "https://api.fortnitetracker.com/v1/profile/pc/\(username)")
-        var req: URLRequest = URLRequest.init(url: urlString!)
+        let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
+        let encoded = url.replacingOccurrences(of: " ", with: "%", options: .literal, range: nil)
+        guard let urlString = URL(string: encoded) else {
+            return
+        }
+        var req: URLRequest = URLRequest.init(url: urlString)
         req.setValue("7c57a9c5-6600-4e0f-a292-74a02cc1bcb6", forHTTPHeaderField: "TRN-Api-Key")
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
             if error != nil {

@@ -95,14 +95,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USW-qh-JDg">
-                                                    <rect key="frame" x="15" y="34" width="34" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="40"/>
-                                                    <color key="textColor" red="0.4238930344581604" green="0.14773207902908325" blue="0.60787475109100342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbo-89-F2r">
-                                                    <rect key="frame" x="57" y="33" width="232" height="41"/>
+                                                    <rect key="frame" x="15" y="28" width="50" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="40"/>
                                                     <color key="textColor" red="0.4238930344581604" green="0.14773207902908325" blue="0.60787475109100342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -110,6 +103,13 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF5-su-ggr">
                                                     <rect key="frame" x="297" y="37" width="34" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="40"/>
+                                                    <color key="textColor" red="0.4238930344581604" green="0.14773207902908325" blue="0.60787475109100342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbo-89-F2r">
+                                                    <rect key="frame" x="71" y="36" width="218" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="40"/>
                                                     <color key="textColor" red="0.4238930344581604" green="0.14773207902908325" blue="0.60787475109100342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -256,7 +256,7 @@
         <scene sceneID="QxB-XB-pzV">
             <objects>
                 <navigationController id="MIS-iS-2hn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" id="tlY-pG-E0h"/>
+                    <tabBarItem key="tabBarItem" title="News" image="icons8-available-updates-26" selectedImage="icons8-available-updates-26" id="tlY-pG-E0h"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3v-zK-HzS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -494,11 +494,11 @@
             </objects>
             <point key="canvasLocation" x="-423" y="1028"/>
         </scene>
-        <!--Item-->
+        <!--Leaderboard-->
         <scene sceneID="gdT-2E-S3Y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UyW-nD-7uR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Rx1-7D-joq"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboard" image="icons8-leaderboard-26" selectedImage="icons8-leaderboard-26" id="Rx1-7D-joq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L7f-nt-Wol">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -515,11 +515,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-available-updates-26" width="26" height="26"/>
         <image name="icons8-find-user-male-26" width="26" height="26"/>
+        <image name="icons8-leaderboard-26" width="26" height="26"/>
         <image name="icons8-twitch-32" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cyd-BF-vyR"/>
+        <segue reference="2jN-9z-WE3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24321195483207703" green="0.24304986000061035" blue="0.24705731868743896" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
