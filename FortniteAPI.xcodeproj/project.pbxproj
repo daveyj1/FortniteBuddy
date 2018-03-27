@@ -26,6 +26,7 @@
 		D8CDAB06206366B300FA50F2 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDAB05206366B300FA50F2 /* StreamCell.swift */; };
 		D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */; };
 		D8FF82EB2069ED5100315449 /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF82EA2069ED5100315449 /* LeaderboardCell.swift */; };
+		D8FF82EE206AB12300315449 /* EsportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF82ED206AB12300315449 /* EsportsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D8CDAB05206366B300FA50F2 /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		D8DEE809202D2F9E00239455 /* PlayerApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerApiManager.swift; sourceTree = "<group>"; };
 		D8FF82EA2069ED5100315449 /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		D8FF82ED206AB12300315449 /* EsportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsportsViewController.swift; sourceTree = "<group>"; };
 		DE6275DE40CCBD955F01EB01 /* Pods_FortniteAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B5FB2A7475B8870DC5A666 /* Pods_FortniteAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,12 +191,8 @@
 		D8A7B9752044CDC500DC39CC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8650CDC2019550700604685 /* ViewController.swift */,
-				D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */,
-				D8CDAB032063120A00FA50F2 /* StreamViewController.swift */,
-				D85EC2C7206448D300C19865 /* TwitchViewController.swift */,
-				7C06502320655CB2000B4F7A /* NewsViewController.swift */,
-				D893592D20699AB30093F89F /* LeaderboardViewController.swift */,
+				D8FF82F0206AB15600315449 /* Extension Pages */,
+				D8FF82EF206AB12900315449 /* Main Pages */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +204,27 @@
 				D8FF82EA2069ED5100315449 /* LeaderboardCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8FF82EF206AB12900315449 /* Main Pages */ = {
+			isa = PBXGroup;
+			children = (
+				D8A7B9732044CDBE00DC39CC /* SearchViewController.swift */,
+				7C06502320655CB2000B4F7A /* NewsViewController.swift */,
+				D893592D20699AB30093F89F /* LeaderboardViewController.swift */,
+				D8FF82ED206AB12300315449 /* EsportsViewController.swift */,
+				D8CDAB032063120A00FA50F2 /* StreamViewController.swift */,
+			);
+			path = "Main Pages";
+			sourceTree = "<group>";
+		};
+		D8FF82F0206AB15600315449 /* Extension Pages */ = {
+			isa = PBXGroup;
+			children = (
+				D8650CDC2019550700604685 /* ViewController.swift */,
+				D85EC2C7206448D300C19865 /* TwitchViewController.swift */,
+			);
+			path = "Extension Pages";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +528,7 @@
 				D8CDAB042063120A00FA50F2 /* StreamViewController.swift in Sources */,
 				D8FF82EB2069ED5100315449 /* LeaderboardCell.swift in Sources */,
 				D85EC2C8206448D300C19865 /* TwitchViewController.swift in Sources */,
+				D8FF82EE206AB12300315449 /* EsportsViewController.swift in Sources */,
 				D8CDAB06206366B300FA50F2 /* StreamCell.swift in Sources */,
 				D8650CDD2019550700604685 /* ViewController.swift in Sources */,
 				D893592E20699AB40093F89F /* LeaderboardViewController.swift in Sources */,

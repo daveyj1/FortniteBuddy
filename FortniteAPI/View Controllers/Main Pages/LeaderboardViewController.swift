@@ -11,6 +11,7 @@ import UIKit
 class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var subView: UIView!
     
     let players = ["Twitch_Ettnix", "Twitch_Svennoss", "WBG Strafesh0t", "Ninja", "Solary Kinstaar", "Uwatakashi.TV", "TSM_MYTH", "Zaccubus", "OC Woodpecker", "Infamous Uniq", "Moshy1", "Chambers-", "Twitch APEXENITH", "K - BOOGEYMAN", "Hamlinz", "OC LnNzera", "Dark", "Twitch_PuZiiyo", "KingRichard15", "StancodTV", "Miniding", "SypherPK", "quan_khi", "Infamous Thế Anh", "ReddCinema"]
 
@@ -21,6 +22,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 115
+        
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         
         /*
         let layer = CAGradientLayer()
