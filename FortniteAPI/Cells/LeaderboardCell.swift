@@ -15,6 +15,7 @@ class LeaderboardCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.contentView.backgroundColor = UIColor.clear
         // Initialization code
     }
 

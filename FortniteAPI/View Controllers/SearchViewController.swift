@@ -9,56 +9,26 @@
 import UIKit
 import Pastel
 
-class SearchViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SearchViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchBox: UITextField!
-    @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var searchLabel: UIButton!
     
+    @IBOutlet weak var xboxButton: UIButton!
+    @IBOutlet weak var psnButton: UIButton!
+    @IBOutlet weak var pcButton: UIButton!
+    
+    
     let consoles = ["XBone", "PS4", "PC"]
-    var chosenConsole = ""
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return consoles[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return consoles.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        chosenConsole = consoles[row]
-    }
+    var chosenConsole = "XBone"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
         searchLabel.layer.shadowOpacity = 15
         titleLabel.layer.shadowOpacity = 15
         searchBox.layer.cornerRadius = 15
-        /*
-        let textPastel = PastelView(frame: titleLabel.bounds)
-        // Custom Direction
-        textPastel.startPastelPoint = .bottomLeft
-        textPastel.endPastelPoint = .topRight
-        
-        // Custom Duration
-        textPastel.animationDuration = 3.0
-        
-        // Custom Color
-        textPastel.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
-                              UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
-                              UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
-                              UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0)])
-        
-        textPastel.startAnimation()
-        view.insertSubview(textPastel, at: 0)
-        */
-        
         
         let pastelView = PastelView(frame: view.bounds)
         
@@ -80,6 +50,9 @@ class SearchViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if searchBox.text! == "" {
+            return
+        }
         let detailViewController = segue.destination as! ViewController
         detailViewController.username = searchBox.text!
         if chosenConsole == "XBone" {
@@ -92,7 +65,29 @@ class SearchViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             detailViewController.console = "pc"
         }
     }
-
+    
+    @IBAction func pickXbox(_ sender: UIButton) {
+        chosenConsole = "XBone"
+        xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
+        pcButton.setImage(#imageLiteral(resourceName: "icons8-windows8-filled-50"), for: .normal)
+        psnButton.setImage(#imageLiteral(resourceName: "icons8-playstation-filled-50"), for: .normal)
+    }
+    
+    @IBAction func pickPSN(_ sender: UIButton) {
+        chosenConsole = "PS4"
+        xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50"), for: .normal)
+        pcButton.setImage(#imageLiteral(resourceName: "icons8-windows8-filled-50"), for: .normal)
+        psnButton.setImage(#imageLiteral(resourceName: "icons8-playstation-filled-50 (1)"), for: .normal)
+    }
+    
+    
+    @IBAction func pickPC(_ sender: UIButton) {
+        chosenConsole = "PC"
+        xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50"), for: .normal)
+        pcButton.setImage(#imageLiteral(resourceName: "icons8-windows8-filled-50 (2)"), for: .normal)
+        psnButton.setImage(#imageLiteral(resourceName: "icons8-playstation-filled-50"), for: .normal)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

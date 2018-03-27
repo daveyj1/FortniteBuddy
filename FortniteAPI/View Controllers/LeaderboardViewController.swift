@@ -21,6 +21,17 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 115
+        
+        /*
+        let layer = CAGradientLayer()
+        layer.frame = self.view.frame
+        let colorTop = UIColor(red: 104.0 / 255.0, green: 89.0 / 255.0, blue: 234.0 / 255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 106.0 / 255.0, green: 206.0 / 255.0, blue: 176.0 / 255.0, alpha: 1.0).cgColor
+        layer.colors = [colorTop, colorBottom]
+        layer.startPoint = CGPoint(x:0.5, y:0.0)
+        layer.endPoint = CGPoint(x:0.5, y:1.0);
+        self.view.layer.
+        */
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -35,6 +46,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeaderboardCell") as! LeaderboardCell
         cell.usernameLabel.text = players[indexPath.row]
         cell.rankLabel.text = "#\(String(indexPath.row+1))"
+        
+        cell.layer.backgroundColor = UIColor.clear.cgColor
         
         return cell
     }

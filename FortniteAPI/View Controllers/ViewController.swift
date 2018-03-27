@@ -45,6 +45,9 @@ class ViewController: UIViewController {
     }
     
     func getSoloStats() {
+        if username == "" {
+            return
+        }
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
         let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         guard let urlString = URL(string: encoded) else {
@@ -153,6 +156,9 @@ class ViewController: UIViewController {
     }
     
     func getDuoStats() {
+        if username == "" {
+            return
+        }
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
         let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         guard let urlString = URL(string: encoded) else {
@@ -260,6 +266,9 @@ class ViewController: UIViewController {
     }
     
     func getSquadStats() {
+        if username == "" {
+            return
+        }
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
         let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         guard let urlString = URL(string: encoded) else {
