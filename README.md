@@ -7,10 +7,10 @@ Fortnite Buddy is a companion application to the battle royal game Fortnite that
 The following **required** user stories are complete:
 
 - [X] User can search for a play on a specific platformar
-- [ ] User can see a list of Twitch.tv streamers that are currently live and follow a link to watch that streamer
+- [X] User can see a list of Twitch.tv streamers that are currently live and follow a link to watch that streamer
 - [ ] User can see a list of popular Esports teams and look at each player's stats on the team
-- [ ] User can see a leaderboard of the top players in the world
-- [ ] User can see updates from the developer related to the game or exciting news about the game
+- [X] User can see a leaderboard of the top players in the world
+- [X] User can see updates from the developer related to the game or exciting news about the game
 
 The following **stretch** user stories are implemented:
 
