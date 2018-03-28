@@ -9,10 +9,11 @@
 import UIKit
 
 class NinjaViewController: UIViewController {
-
+    @IBOutlet weak var youtubeWebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        youtubeWebView.loadRequest(NSURLRequest(url: NSURL(string: "https://www.youtube.com/results?search_query=fortnite")! as URL) as URLRequest)
         // Do any additional setup after loading the view.
     }
 

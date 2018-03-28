@@ -21,8 +21,6 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var psnButton: UIButton!
     @IBOutlet weak var pcButton: UIButton!
     
-//    var shimmer: FBShimmeringView!
-    
     let consoles = ["XBone", "PS4", "PC"]
     var chosenConsole = "XBone"
     
@@ -32,11 +30,6 @@ class SearchViewController: UIViewController {
         searchLabel.layer.shadowOpacity = 15
         titleLabel.layer.shadowOpacity = 15
         searchBox.layer.cornerRadius = 15
-//        shimmer = FBShimmeringView(frame: self.goldScar.frame)
-//        shimmer.contentView = goldScar
-//        self.view.addSubview(shimmer)
-//        shimmer.shimmeringSpeed = 100
-//        shimmer.isShimmering = true
         goldScar.layer.shadowColor = UIColor.orange.cgColor
         goldScar.layer.shadowRadius = 4
         goldScar.layer.shadowOpacity = 0.9
@@ -45,23 +38,6 @@ class SearchViewController: UIViewController {
         goldScar.startGlowingWithColor(color: UIColor.yellow, intensity: 0.3)
         goldScar.startGlowingWithColor(color: UIColor.orange, intensity: 0.5)
 
-        //titleLabel.startGlowing()
-        
-        /*
-        let pastelView = PastelView(frame: view.bounds)
-        // Custom Direction
-        pastelView.startPastelPoint = .bottomLeft
-        pastelView.endPastelPoint = .topRight
-        // Custom Duration
-        pastelView.animationDuration = 3.0
-        // Custom Color
-        pastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
-                              UIColor(red: 175/255, green: 64/255, blue: 129/255, alpha: 1.0),
-                              UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0)])
-        pastelView.startAnimation()
-        view.insertSubview(pastelView, at: 0)
-        */
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
@@ -72,10 +48,13 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func blah(_ sender: Any) {
-        print("hello")
+        performSegue(withIdentifier: "ninjaSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ninjaSegue" {
+            let destinationVC = segue.destination as? NinjaViewController
+        }
         if searchBox.text! == "" {
             return
         }

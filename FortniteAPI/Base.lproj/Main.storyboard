@@ -116,6 +116,7 @@
                         <outlet property="searchLabel" destination="MM4-iK-drL" id="Tp3-Ug-bSb"/>
                         <outlet property="titleLabel" destination="PE0-WE-Xpe" id="3rD-fF-PMV"/>
                         <outlet property="xboxButton" destination="rKQ-EG-BgO" id="kqY-kW-AKI"/>
+                        <segue destination="cym-PN-Glp" kind="show" identifier="ninjaSegue" id="1uC-5G-bgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOQ-o2-Y5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,13 +504,23 @@
                     <view key="view" contentMode="scaleToFill" id="VO9-xq-7O8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-Ap-GdL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ivy-Xp-iUJ"/>
                     </view>
+                    <connections>
+                        <outlet property="youtubeWebView" destination="J4F-Ap-GdL" id="h6M-em-3od"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0R9-eF-eR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="610"/>
+            <point key="canvasLocation" x="2528.8000000000002" y="335.98200899550227"/>
         </scene>
         <!--Esports Teams-->
         <scene sceneID="tnh-G8-XPb">
