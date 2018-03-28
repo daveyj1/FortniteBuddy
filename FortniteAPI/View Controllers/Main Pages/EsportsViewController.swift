@@ -8,6 +8,7 @@
 
 import UIKit
 import GradientView
+import Pastel
 
 class EsportsViewController: UIViewController {
     
@@ -20,39 +21,54 @@ class EsportsViewController: UIViewController {
     @IBOutlet weak var tsmView: UIView!
     @IBOutlet weak var tsmBackgroundView: UIView!
     
-    @IBOutlet weak var liquidView: UIView!
-    @IBOutlet weak var liquidBackgroundView: UIView!
+    
+    @IBOutlet weak var opfaView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Optic View
-        let gradientView1 = GradientView(frame: opticView.bounds)
-        gradientView1.colors = [UIColor.green, UIColor.black]
-        opticBackgroundView.addSubview(gradientView1)
         opticView.backgroundColor = UIColor.clear
-        //----------
-        
-        //Faze View
-        let gradientView2 = GradientView(frame: opticView.bounds)
-        gradientView2.colors = [UIColor.red, UIColor.blue]
-        fazeBackgroundView.addSubview(gradientView2)
         fazeView.backgroundColor = UIColor.clear
-        //----------
-        
-        //TSM View
-        let gradientView3 = GradientView(frame: opticView.bounds)
-        gradientView3.colors = [UIColor.white, UIColor.darkGray]
-        tsmBackgroundView.addSubview(gradientView3)
         tsmView.backgroundColor = UIColor.clear
-        //----------
         
-        //Liquid View
-        let gradientView4 = GradientView(frame: opticView.bounds)
-        gradientView4.colors = [UIColor.white, UIColor.cyan]
-        liquidBackgroundView.addSubview(gradientView4)
-        liquidView.backgroundColor = UIColor.clear
-        //----------
+        let pastelView1 = PastelView(frame: opticView.bounds)
+        // Custom Direction
+        pastelView1.startPastelPoint = .bottomLeft
+        pastelView1.endPastelPoint = .topRight
+        // Custom Duration
+        pastelView1.animationDuration = 3.0
+        // Custom Color
+        pastelView1.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                              UIColor(red: 158/255, green: 198/255, blue: 73/255, alpha: 1.0),
+                              UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)])
+        pastelView1.startAnimation()
+        opticBackgroundView.insertSubview(pastelView1, at: 0)
+        
+        let pastelView2 = PastelView(frame: opticView.bounds)
+        // Custom Direction
+        pastelView2.startPastelPoint = .bottomLeft
+        pastelView2.endPastelPoint = .topRight
+        // Custom Duration
+        pastelView2.animationDuration = 3.0
+        // Custom Color
+        pastelView2.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                               UIColor(red: 215/255, green: 55/255, blue: 50/255, alpha: 1.0),
+                               UIColor(red: 255/255, green: 255/255, blue:255/255, alpha: 1.0)])
+        pastelView2.startAnimation()
+        fazeBackgroundView.insertSubview(pastelView2, at: 0)
+        
+        let pastelView3 = PastelView(frame: tsmView.bounds)
+        // Custom Direction
+        pastelView3.startPastelPoint = .bottomLeft
+        pastelView3.endPastelPoint = .topRight
+        // Custom Duration
+        pastelView3.animationDuration = 3.0
+        // Custom Color
+        pastelView3.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
+                               UIColor(red: 35/255, green: 72/255, blue: 211/255, alpha: 1.0),
+                               UIColor(red: 255/255, green: 255/255, blue:255/255, alpha: 1.0)])
+        pastelView3.startAnimation()
+        tsmBackgroundView.insertSubview(pastelView3, at: 0)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
