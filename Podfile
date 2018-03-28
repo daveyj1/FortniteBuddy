@@ -9,6 +9,7 @@ target 'FortniteAPI' do
   pod 'Alamofire', '~> 4.6'
   pod 'AlamofireImage'
   pod 'Pastel'
+  pod 'GradientView', '~> 2.3'
 
   target 'FortniteAPITests' do
     inherit! :search_paths

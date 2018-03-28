@@ -482,7 +482,7 @@
             </objects>
             <point key="canvasLocation" x="1493.5999999999999" y="107.49625187406298"/>
         </scene>
-        <!--Esports View Controller-->
+        <!--Esports Teams-->
         <scene sceneID="tnh-G8-XPb">
             <objects>
                 <viewController id="Ngb-KJ-psP" customClass="EsportsViewController" customModule="FortniteAPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -490,22 +490,172 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ESPORTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCB-wh-V7x">
-                                <rect key="frame" x="70" y="243" width="234" height="181"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEy-kr-vtD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-sr-ixA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="optic logo" translatesAutoresizingMaskIntoConstraints="NO" id="dja-st-YdS">
+                                        <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Optic Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-gE-9cc">
+                                        <rect key="frame" x="116" y="37" width="251" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWE-zR-t8z">
+                                        <rect key="frame" x="8" y="17" width="367" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="trn-FH-hbK" kind="show" identifier="opticSegue" id="0xM-6F-dos"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="itH-KQ-Eh9">
+                                <rect key="frame" x="0.0" y="204" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hP0-9E-zHe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fazelogo" translatesAutoresizingMaskIntoConstraints="NO" id="Pq6-LD-clN">
+                                        <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faze Clan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgK-gO-dxZ">
+                                        <rect key="frame" x="116" y="37" width="251" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-Nz-bbp">
+                                        <rect key="frame" x="4" y="8" width="367" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="trn-FH-hbK" kind="show" identifier="fazeSegue" id="210-0t-Vxk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-da-fku">
+                                <rect key="frame" x="0.0" y="343" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAm-gZ-RQf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TSMlogo" translatesAutoresizingMaskIntoConstraints="NO" id="H8l-FF-ZeZ">
+                                        <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Solo Mid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmz-6w-5Dn">
+                                        <rect key="frame" x="116" y="37" width="251" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-T7-PDL">
+                                        <rect key="frame" x="4" y="8" width="367" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="trn-FH-hbK" kind="show" identifier="tsmSegue" id="URh-ZK-hXA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-on-zjL">
+                                <rect key="frame" x="0.0" y="483" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Em7-a8-7g7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LiquidLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-Gn-c64">
+                                        <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Liquid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-gB-aWl">
+                                        <rect key="frame" x="116" y="37" width="251" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-CU-CFe">
+                                        <rect key="frame" x="0.0" y="8" width="367" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="trn-FH-hbK" kind="show" identifier="liquidSegue" id="be9-SM-mc8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kqH-cq-N3K"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Esports Teams" id="8Kk-Ms-kqs"/>
+                    <connections>
+                        <outlet property="fazeBackgroundView" destination="hP0-9E-zHe" id="VIf-TG-eYI"/>
+                        <outlet property="fazeView" destination="itH-KQ-Eh9" id="6e6-vX-61c"/>
+                        <outlet property="liquidBackgroundView" destination="Em7-a8-7g7" id="hlH-Qm-MvD"/>
+                        <outlet property="liquidView" destination="xLV-on-zjL" id="gOx-i3-AFh"/>
+                        <outlet property="opticBackgroundView" destination="rCd-sr-ixA" id="WC8-N3-Fr7"/>
+                        <outlet property="opticView" destination="GEy-kr-vtD" id="kHd-UN-jjn"/>
+                        <outlet property="tsmBackgroundView" destination="mAm-gZ-RQf" id="aSG-Ur-8hP"/>
+                        <outlet property="tsmView" destination="bWb-da-fku" id="0Pn-aY-1Qj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhv-jz-8V8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.79999999999995" y="-822.63868065967017"/>
+        </scene>
+        <!--Esport Player View Controller-->
+        <scene sceneID="zkz-va-VYS">
+            <objects>
+                <viewController id="trn-FH-hbK" customClass="EsportPlayerViewController" customModule="FortniteAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Apo-Ya-JKS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-SX-5PF">
+                                <rect key="frame" x="47" y="74" width="280" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kqH-cq-N3K"/>
+                        <viewLayoutGuide key="safeArea" id="3fr-UQ-Yfp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8Kk-Ms-kqs"/>
+                    <connections>
+                        <outlet property="teamLabel" destination="eCy-SX-5PF" id="qYC-5n-orC"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhv-jz-8V8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYR-HE-KLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576.79999999999995" y="-822.63868065967017"/>
+            <point key="canvasLocation" x="1493.5999999999999" y="-823.53823088455783"/>
         </scene>
         <!--Search-->
         <scene sceneID="13X-he-jc5">
@@ -610,6 +760,9 @@
         <image name="FNwallpaper2" width="200" height="356"/>
         <image name="FNwallpaper3" width="936" height="1432"/>
         <image name="FNwallpaper5" width="499" height="710"/>
+        <image name="Fazelogo" width="300" height="300"/>
+        <image name="LiquidLogo" width="1200" height="1200"/>
+        <image name="TSMlogo" width="300" height="300"/>
         <image name="icons8-available-updates-26" width="26" height="26"/>
         <image name="icons8-find-user-male-26" width="26" height="26"/>
         <image name="icons8-leaderboard-26" width="26" height="26"/>
@@ -618,8 +771,10 @@
         <image name="icons8-twitch-32" width="32" height="32"/>
         <image name="icons8-windows8-filled-50" width="50" height="50"/>
         <image name="icons8-xbox-filled-50" width="50" height="50"/>
+        <image name="optic logo" width="600" height="390"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="0xM-6F-dos"/>
         <segue reference="cyd-BF-vyR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24321195483207703" green="0.24304986000061035" blue="0.24705731868743896" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

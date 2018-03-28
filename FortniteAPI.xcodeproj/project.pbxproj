@@ -12,6 +12,7 @@
 		7C06502420655CB2000B4F7A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06502320655CB2000B4F7A /* NewsViewController.swift */; };
 		B8828ECAB3CDA67669E2B1BC /* Pods_FortniteAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB366B5EF3FCF32148DFD5DF /* Pods_FortniteAPIUITests.framework */; };
 		D85EC2C8206448D300C19865 /* TwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EC2C7206448D300C19865 /* TwitchViewController.swift */; };
+		D864483B206B2D2300782127 /* EsportPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864483A206B2D2300782127 /* EsportPlayerViewController.swift */; };
 		D8650CDB2019550700604685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8650CDA2019550700604685 /* AppDelegate.swift */; };
 		D8650CDD2019550700604685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8650CDC2019550700604685 /* ViewController.swift */; };
 		D8650CE02019550700604685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8650CDE2019550700604685 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		8FFBE1E8249640DB4AC2E3C7 /* Pods-FortniteAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteAPITests/Pods-FortniteAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB366B5EF3FCF32148DFD5DF /* Pods_FortniteAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85EC2C7206448D300C19865 /* TwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchViewController.swift; sourceTree = "<group>"; };
+		D864483A206B2D2300782127 /* EsportPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsportPlayerViewController.swift; sourceTree = "<group>"; };
 		D8650CD72019550700604685 /* FortniteAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8650CDA2019550700604685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8650CDC2019550700604685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				D8650CDC2019550700604685 /* ViewController.swift */,
 				D85EC2C7206448D300C19865 /* TwitchViewController.swift */,
+				D864483A206B2D2300782127 /* EsportPlayerViewController.swift */,
 			);
 			path = "Extension Pages";
 			sourceTree = "<group>";
@@ -439,12 +442,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FortniteAPI/Pods-FortniteAPI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientView/GradientView.framework",
 				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +538,7 @@
 				D8650CDD2019550700604685 /* ViewController.swift in Sources */,
 				D893592E20699AB40093F89F /* LeaderboardViewController.swift in Sources */,
 				D8650CDB2019550700604685 /* AppDelegate.swift in Sources */,
+				D864483B206B2D2300782127 /* EsportPlayerViewController.swift in Sources */,
 				D8A7B9742044CDBE00DC39CC /* SearchViewController.swift in Sources */,
 				D8DEE80A202D2F9E00239455 /* PlayerApiManager.swift in Sources */,
 				7C06502420655CB2000B4F7A /* NewsViewController.swift in Sources */,

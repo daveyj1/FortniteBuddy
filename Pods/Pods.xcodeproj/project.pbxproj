@@ -7,69 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05006BDD7301FCF2678618DEDCC69B94 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFDE28DC34D6625569CFB2E72B6FEE3 /* UIImage+AlamofireImage.swift */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9EAE5AF1DF073FE73AC9C26EA65B3 /* Timeline.swift */; };
+		05006BDD7301FCF2678618DEDCC69B94 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB8B473872CFAF42FE745F3A3582F20 /* UIImage+AlamofireImage.swift */; };
+		0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B958C652BC0F8749FE60B1CFE3720C8 /* Timeline.swift */; };
 		17171F2B8111D1FE61D8F268E93591B9 /* Pods-FortniteAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD2B1155754C7BAA9AE2FB402884B7D /* Pods-FortniteAPITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E44B1AEE991D9A19238B5978C1F39BE6 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202822E4668C16D115A8F68F3ADF0E0F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A30B437DFE25E75C3C9072D7D21DF /* ImageDownloader.swift */; };
-		26479B07464784F3BF8C0853CA049976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
-		27996F52CCABBD6D0874B79D1B913598 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9A099616F04658026DD86E73AC274 /* ImageFilter.swift */; };
-		2BD7CFD41DACC439E8C0A527F1643495 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC95780C1F88C7C07BB5632FD6587E /* Request+AlamofireImage.swift */; };
-		2EA0415A1A8A4FFC7403E201F915F9A4 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F005B8C236F6F73976E6C11A5BC95 /* AFIError.swift */; };
-		304C5736AC5D49B526C709397D0CF048 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E8C32527EF0538EEAE8E55F3E5E97 /* UIImageView+AlamofireImage.swift */; };
-		32EDA9ED83F4442303A46839027E152E /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85AD5F5C3E1B01E3DB057DB6B6F051C7 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B16EA120753098525C33D0E4953CAFA8 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202822E4668C16D115A8F68F3ADF0E0F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E10F7EB048D592FF15FB672D6CE50 /* ImageDownloader.swift */; };
+		26479B07464784F3BF8C0853CA049976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		27996F52CCABBD6D0874B79D1B913598 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A673606FA9E1C76A0A556EE8BBC418B /* ImageFilter.swift */; };
+		2BD7CFD41DACC439E8C0A527F1643495 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F653CE1CEE0AAE74A4D8C79DEC662C /* Request+AlamofireImage.swift */; };
+		2EA0415A1A8A4FFC7403E201F915F9A4 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF94AA5F9A750206B794CE1C7348F /* AFIError.swift */; };
+		304C5736AC5D49B526C709397D0CF048 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6731896D858FD27B3AA6D5F231DF3B /* UIImageView+AlamofireImage.swift */; };
+		32EDA9ED83F4442303A46839027E152E /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A02127E00DC3623C7B594742C017C12 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34A5FC76995CAC31A55945352A5E2D23 /* Pods-FortniteAPIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7451DDA42D5E01B08BA57C3F9E2826 /* Pods-FortniteAPIUITests-dummy.m */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6855895C3DA2AEF5613EF134C5C29DC8 /* TaskDelegate.swift */; };
-		37F951F2BDB75BD682C2999EB7B51A35 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A476496AC584D246D0F49D5279FC272C /* AlamofireImage-dummy.m */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2831D192B4E6584E24B4FEA028101C4 /* TaskDelegate.swift */; };
+		37F951F2BDB75BD682C2999EB7B51A35 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E95D4785C801A99FB6FEA60C983B5D52 /* AlamofireImage-dummy.m */; };
 		3BC4711DA5B15B38BC857D7B3196193A /* Pods-FortniteAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9759DE3FF4085785BF8C89BB1B2CD378 /* Pods-FortniteAPITests-dummy.m */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08515E2AE6EA3B542EB52BD9269CD8B /* Request.swift */; };
-		55CD0F7B5D1E3BECADBD137D6B819068 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
-		6006011C6C6333DB148CEA4E931AFAF1 /* Pods-FortniteAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0DBE81D3D45DC2B41EB4DA28A4A374 /* Pods-FortniteAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101198ECA2FF650495C0D203AF118E76 /* DispatchQueue+Alamofire.swift */; };
-		613167D898FF421A6F75D1FE5D145B9B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278EB3A889A6067F64B43A65BF789E /* ServerTrustPolicy.swift */; };
-		72DC14E956F45F642E3207BDA5E5E478 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8237E52E7B7DD041D1EA30FDD8AD37 /* PastelGradient.swift */; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D268CE694783F5F7A0C4FC6FE65D5CA /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891A5B270BCF9D2562C3D7052CE720E /* Result.swift */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF2E85A5174271BDA8C1BBADFF674 /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DBDF1FB3E711D20CCB8E08F7BEA590 /* NetworkReachabilityManager.swift */; };
-		A4B9B41B07FC727B63BF7260A4E5132B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
-		A4D9C72C3BAD0F4E44937D9E9F47029E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C483DBA8D70AF3542177E9DC78B60256 /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A3AB277D7147C5430518FCB7E548F /* SessionManager.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C093E84C1794C47071B285E6E0CA138 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1769E349BAB7E0042C5EBEFFA9BA92 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E10A00E92F6117B4D3F0DB9D365A66 /* ParameterEncoding.swift */; };
-		C3876E92B5D48CFC1C10A10AE2B3E812 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102813772AAF63E93BB7C2BC23B37FEE /* PastelView.swift */; };
-		C73BF39A4CCC3E450E102C23027F8FF8 /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A879205423CF5A5B913038EA90D075C /* UIButton+AlamofireImage.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114EC53D858719CAF10AEEA27BF0D5C2 /* Response.swift */; };
-		D3BCBA024F82A983D12EF6C52326DB01 /* Pods-FortniteAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FCAA0313721494E567E67097AAE0EB /* Pods-FortniteAPI-dummy.m */; };
-		D9E544B8CB42DA8DD44838F83610D8E0 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01EA81FE23D9989586B07C7CA2665B /* ImageCache.swift */; };
-		E03F419287F929DF0C7FCE665F0E96EA /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3322727D7E48FC8AD75AEE2E1AAE55 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1FF4985892E23B75A3381EFF830DFD5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AB518ECDB1F10C331CBF49076F3 /* Image.swift */; };
-		E4268869183317C5E39F79399AB6EFFB /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B45E1453E2959B7B9FAD4C1322427238 /* Pastel-dummy.m */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087457E7C1496FD1909DD69F3120782 /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D44D7FEDB56BA78788474863E5E82F /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18F67BE581999F4394B38EB593576E /* Alamofire.swift */; };
+		42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F3C85E2171C5164D8ED6A2EA61591 /* Request.swift */; };
+		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85B8D2FE3CD63DB0E04FB3D914480C9 /* GradientView.swift */; };
+		55CD0F7B5D1E3BECADBD137D6B819068 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66186C2560ADFF080B721F42D9E54559 /* DispatchQueue+Alamofire.swift */; };
+		613167D898FF421A6F75D1FE5D145B9B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDC10076C783AEC17FD64C56F04021 /* ServerTrustPolicy.swift */; };
+		72DC14E956F45F642E3207BDA5E5E478 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CCCF4BB56FF2D90E1C71576908393 /* PastelGradient.swift */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A27CD1A8AF5A3A0F48494476C06E9A /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F480C652F9176375CD87E42CA0ADCB5 /* Result.swift */; };
+		81245AFD2F07B7CF32338A3E2D8BCE6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FCE4C1AE360A49A02DD5AA6747D8C5 /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C951AB03EF321D0FD5959F07318E22 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27A58C21C139ABF054898F3ECF52B9A /* NetworkReachabilityManager.swift */; };
+		A4B9B41B07FC727B63BF7260A4E5132B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24822529573AB9D940A6195F243F62CE /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2213BB684835714A16EA24DA779060 /* SessionManager.swift */; };
+		B02075C03C7F45DACBD6A5C3777CBCFF /* Pods-FortniteAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0DBE81D3D45DC2B41EB4DA28A4A374 /* Pods-FortniteAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC64147F3DF358BD416EFA95B102FC /* GradientView-dummy.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDD66D92AA95CFC223093BC5E458F /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED10B746558834910B26602E7E24E1B /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362646EDC59638FAECE8E38FAC65B34 /* ParameterEncoding.swift */; };
+		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C14928D312B93CD456A9A9D78334A3F /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3876E92B5D48CFC1C10A10AE2B3E812 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84356EAEF894F2BE294889F94DFB619 /* PastelView.swift */; };
+		C73BF39A4CCC3E450E102C23027F8FF8 /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40316AF389D2D024E6F5573AC420857D /* UIButton+AlamofireImage.swift */; };
+		CB33A0D071A03C5C50A732ADDACE85DA /* Pods-FortniteAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FCAA0313721494E567E67097AAE0EB /* Pods-FortniteAPI-dummy.m */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB05C245E8AEFA77075FB4F896602B /* Response.swift */; };
+		D9E544B8CB42DA8DD44838F83610D8E0 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE001EA4F32170CFD0842F556EF52B8 /* ImageCache.swift */; };
+		E03F419287F929DF0C7FCE665F0E96EA /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B58CF04C11BCD7F1A6200554E37C0A /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1FF4985892E23B75A3381EFF830DFD5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F96DEB5A4E3DA1EE33E6746223D90 /* Image.swift */; };
+		E4268869183317C5E39F79399AB6EFFB /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 058AE2D9F63323F732058BD18C050A68 /* Pastel-dummy.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A20494EAF3EE963B934B5B2F6730B8 /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5BF696DE1685BA19696BEBC11C778 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1B5CB02F65DCCF1CAE4475E3ECE7E /* Alamofire.swift */; };
 		FD907DE5EEB7A6A5D24BBD2CA7D1E221 /* Pods-FortniteAPIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A509B3D22A101AC9FBDF04BFA06493 /* Pods-FortniteAPIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFD7EC2E785ED7B99BA0071E5C16F575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */; };
+		FFD7EC2E785ED7B99BA0071E5C16F575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32FB90C92C6427456368434AFFD6C6DE /* PBXContainerItemProxy */ = {
+		1CD9483D45BFD21A2B5656081F6E1BAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
+			remoteInfo = AlamofireImage;
 		};
-		3AB331FE99446ABFE5241B2F85335C67 /* PBXContainerItemProxy */ = {
+		520D4B6298E7113B44BA5FB2001A4F63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8E1D092BF86FB8C0ABE055E421219B71;
 			remoteInfo = Pastel;
+		};
+		5375080AD8709D60FF78360C53DB276B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BF00F9E712E93DA7B03ACF46198775B;
+			remoteInfo = GradientView;
 		};
 		A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,109 +91,119 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		A7B8DAACFD5E45A9C9121D06D195EF87 /* PBXContainerItemProxy */ = {
+		C257D3BBA84243D494B39516CDBEC277 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
-			remoteInfo = AlamofireImage;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0204E6127E5338A36AA3B806653C4375 /* Pods-FortniteAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0461CA4BE01B9D7B81C29F117CE2EBCB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0327F281D7DD81D72CA713A12BAB4CD2 /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
+		058AE2D9F63323F732058BD18C050A68 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		0A0BF34414000C6C3E1EED86C97521F0 /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GradientView.modulemap; sourceTree = "<group>"; };
 		0AD2B1155754C7BAA9AE2FB402884B7D /* Pods-FortniteAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FortniteAPITests-umbrella.h"; sourceTree = "<group>"; };
-		0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0E9A3AB277D7147C5430518FCB7E548F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		0F8237E52E7B7DD041D1EA30FDD8AD37 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
-		101198ECA2FF650495C0D203AF118E76 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		102813772AAF63E93BB7C2BC23B37FEE /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
-		114EC53D858719CAF10AEEA27BF0D5C2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		0B6D0CB644844E445390EE52C6D75121 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		0CF158C5131B7E71460288ECF2A12148 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pastel.modulemap; sourceTree = "<group>"; };
+		0ED10B746558834910B26602E7E24E1B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		0EEC64147F3DF358BD416EFA95B102FC /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
 		1192126668F42D5A4F350A0BF9056EEF /* Pods-FortniteAPI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPI-resources.sh"; sourceTree = "<group>"; };
-		1446F178E607FFA26B754DA961ED07BA /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		14594CFA96888E8355282F7CDED422D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16AA0D67B85AA49B1BD7456085B917D2 /* Pods-FortniteAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FortniteAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A879205423CF5A5B913038EA90D075C /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
-		1C093E84C1794C47071B285E6E0CA138 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		19F653CE1CEE0AAE74A4D8C79DEC662C /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		235A36815B06FD7E515EBE9B6F019533 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
+		23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		24822529573AB9D940A6195F243F62CE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		2582F9914EDF5D57705605B64055BDFA /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
 		25D66A4C84AE2EBE9717430D5E1BC669 /* Pods-FortniteAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		27B1270BAA1ED71ECE9D1ED3C5531AE6 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
 		2C0DBE81D3D45DC2B41EB4DA28A4A374 /* Pods-FortniteAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FortniteAPI-umbrella.h"; sourceTree = "<group>"; };
-		2C50ECD39E7294CFA7200D9999DE5B35 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pastel.modulemap; sourceTree = "<group>"; };
-		2DFDE28DC34D6625569CFB2E72B6FEE3 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
-		399BF0CA18DABC5CF55226113EA3D90D /* Pods_FortniteAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPI.framework; path = "Pods-FortniteAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB1B5CB02F65DCCF1CAE4475E3ECE7E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		2F480C652F9176375CD87E42CA0ADCB5 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		3B2213BB684835714A16EA24DA779060 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		3B9684788250DA7BEF3AAC9750122687 /* Pods-FortniteAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		415E8C32527EF0538EEAE8E55F3E5E97 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
+		40316AF389D2D024E6F5573AC420857D /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		44A509B3D22A101AC9FBDF04BFA06493 /* Pods-FortniteAPIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FortniteAPIUITests-umbrella.h"; sourceTree = "<group>"; };
-		47A2374870B0D5F3397AE2C76F545BD7 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		44C4B7A2EA74E7E6D0D5D5DE19B36053 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A27CD1A8AF5A3A0F48494476C06E9A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4A673606FA9E1C76A0A556EE8BBC418B /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		4AA1F2CC765DAB8BB20638C1632EC237 /* Pods-FortniteAPITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPITests-resources.sh"; sourceTree = "<group>"; };
 		4B7451DDA42D5E01B08BA57C3F9E2826 /* Pods-FortniteAPIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FortniteAPIUITests-dummy.m"; sourceTree = "<group>"; };
-		521DF2E85A5174271BDA8C1BBADFF674 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		56DBDF1FB3E711D20CCB8E08F7BEA590 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		5891A5B270BCF9D2562C3D7052CE720E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		4D5E7A86AE88A2784282E449D53DC8B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C951AB03EF321D0FD5959F07318E22 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		517CCCF4BB56FF2D90E1C71576908393 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
+		54E2F7760C3BD785B20EFF3145DA9A69 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CDC10076C783AEC17FD64C56F04021 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		5B9F4FE6EDB987E52912AC81BE05B40D /* Pods-FortniteAPIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FortniteAPIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5D1769E349BAB7E0042C5EBEFFA9BA92 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		60C8EE433186D5BAD6FE8805F22E6CFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6855895C3DA2AEF5613EF134C5C29DC8 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		6CA0D56604144E04E53CED22EF5857A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CF868E90BA2559A2E67BB5AAC729ECA /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
-		6EB12D6264CEEC7B332E71ED1BE435C1 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72E10A00E92F6117B4D3F0DB9D365A66 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		63FEDD66D92AA95CFC223093BC5E458F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		66186C2560ADFF080B721F42D9E54559 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		761F656B510E4E13CB9079AC0C67974A /* Pods-FortniteAPIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FortniteAPIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7A18F67BE581999F4394B38EB593576E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		78B4F72E16CEA993D854FB33D11C4CD2 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		7B958C652BC0F8749FE60B1CFE3720C8 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		801141FB48AC904CD7D7C188FF5F08C2 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FCAA0313721494E567E67097AAE0EB /* Pods-FortniteAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FortniteAPI-dummy.m"; sourceTree = "<group>"; };
-		85AD5F5C3E1B01E3DB057DB6B6F051C7 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
-		91C76144A9A27BC22057B84640004319 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F4A36E331CB0E0DA417F1FE74C476A /* Pods_FortniteAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPIUITests.framework; path = "Pods-FortniteAPIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D2E2CCAA7D25907EBC62D49991AD62 /* Pods_FortniteAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPITests.framework; path = "Pods-FortniteAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A02127E00DC3623C7B594742C017C12 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		8BAB05C245E8AEFA77075FB4F896602B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		8C14928D312B93CD456A9A9D78334A3F /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
+		8FB8B473872CFAF42FE745F3A3582F20 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B58CF04C11BCD7F1A6200554E37C0A /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
 		94BB2EEF0DCB98FB584918CA0DB316B2 /* Pods-FortniteAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		971351457F02F6DA3A10225A16526062 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9759DE3FF4085785BF8C89BB1B2CD378 /* Pods-FortniteAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FortniteAPITests-dummy.m"; sourceTree = "<group>"; };
-		99EC95780C1F88C7C07BB5632FD6587E /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		9A947D7F7A2E80FADAB3C1F1635376B0 /* Pods-FortniteAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPI.release.xcconfig"; sourceTree = "<group>"; };
-		9C3322727D7E48FC8AD75AEE2E1AAE55 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
-		9D268CE694783F5F7A0C4FC6FE65D5CA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02E6EFFC1E22586096BECF4C612C7C5 /* Pods-FortniteAPIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FortniteAPIUITests.modulemap"; sourceTree = "<group>"; };
-		A087457E7C1496FD1909DD69F3120782 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		A0B0A1989E9167D90931BA8F812C2074 /* Pods_FortniteAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPIUITests.framework; path = "Pods-FortniteAPIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EE95D824C58F15D044C7B53784CC9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A342464B6593D01B4E08E0CB39E847D4 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		A476496AC584D246D0F49D5279FC272C /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
-		A48F7E3AA32C7F5D728F153DF46A75DB /* Pods_FortniteAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPITests.framework; path = "Pods-FortniteAPITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6048A08BCE8D86C497B7BDAB8E8DA1E /* Pods_FortniteAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FortniteAPI.framework; path = "Pods-FortniteAPI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D34D50B4FEDAD4FAE68FD02E94D548 /* Pods-FortniteAPIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPIUITests-resources.sh"; sourceTree = "<group>"; };
-		A8D9A099616F04658026DD86E73AC274 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
-		AC01EA81FE23D9989586B07C7CA2665B /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
-		B2278EB3A889A6067F64B43A65BF789E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		A833AE113EF2A789FF308A9888438FA2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84356EAEF894F2BE294889F94DFB619 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+		AB41B3D2104F2CDE03E1E3760D7B5E6A /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
+		AF1B6BA056AE491FE50E479701111FB9 /* GradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientView.framework; path = GradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16EA120753098525C33D0E4953CAFA8 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		B3C55561DDAA1C0D4A791181805A8C5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B45E1453E2959B7B9FAD4C1322427238 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
 		B6366E50B879E1417C0B6EFA40165C6C /* Pods-FortniteAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FortniteAPI-acknowledgements.plist"; sourceTree = "<group>"; };
-		C27B41D77351A55D79C3DE1152D36CAE /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3E34311D9057200D33C852338E96E0E /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
-		C483DBA8D70AF3542177E9DC78B60256 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		C6A0F7F166363028F3E7E97E9E7FF0CE /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		BE21808189F83B258E31F346C00C9AC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B2228189C208127FE7500D538EAF2C /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		C66E10F7EB048D592FF15FB672D6CE50 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
 		C8037F44CCC75C65EA90707CB433CDE6 /* Pods-FortniteAPITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPITests-frameworks.sh"; sourceTree = "<group>"; };
+		C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C89E92620ED6A01A42E0CBB28F04F0F6 /* Pods-FortniteAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FortniteAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB4E44B0DADC6FC0BED876477ACE5B9A /* Pods-FortniteAPIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPIUITests-frameworks.sh"; sourceTree = "<group>"; };
-		CBDDBBD45414E5786A5A6F5D30CBF97C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		CC25368D8F2BAB08DC3E31BB35D8062B /* Pods-FortniteAPI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FortniteAPI-frameworks.sh"; sourceTree = "<group>"; };
-		D0D44D7FEDB56BA78788474863E5E82F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		CDE001EA4F32170CFD0842F556EF52B8 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		D9A20494EAF3EE963B934B5B2F6730B8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		DA3FB4BFEE46C47CF57EC59DE0CA5D70 /* Pods-FortniteAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FortniteAPI.modulemap"; sourceTree = "<group>"; };
 		E16C0DE2BC8356EBF42B8F908DE71C3F /* Pods-FortniteAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FortniteAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2B9EAE5AF1DF073FE73AC9C26EA65B3 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		E44B1AEE991D9A19238B5978C1F39BE6 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		E6B36AB518ECDB1F10C331CBF49076F3 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
-		E79F005B8C236F6F73976E6C11A5BC95 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
-		E83F1AE5B118844D7A4DD51065F83776 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F08515E2AE6EA3B542EB52BD9269CD8B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		F22A30B437DFE25E75C3C9072D7D21DF /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		E27A58C21C139ABF054898F3ECF52B9A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		E362646EDC59638FAECE8E38FAC65B34 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		E50CF94AA5F9A750206B794CE1C7348F /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		E6A8EAD31B5AD12AFAA3761FEA174BDA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		E8966E5D69EA1CF6242752743AEC7405 /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
+		E95D4785C801A99FB6FEA60C983B5D52 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		F2831D192B4E6584E24B4FEA028101C4 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		F31253A8D2F38DE343C627F502B49CD0 /* Pods-FortniteAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FortniteAPITests.modulemap"; sourceTree = "<group>"; };
+		F54F3C85E2171C5164D8ED6A2EA61591 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		F5FCE4C1AE360A49A02DD5AA6747D8C5 /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
+		F85B8D2FE3CD63DB0E04FB3D914480C9 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
+		FB6731896D858FD27B3AA6D5F231DF3B /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		FE107587A1D147BD7984FB6545ABCFC0 /* Pods-FortniteAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FortniteAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		FEF5BF696DE1685BA19696BEBC11C778 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		FF3F96DEB5A4E3DA1EE33E6746223D90 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C0570D17DDF7768B40D96D6DE7EE58D /* Frameworks */ = {
+		98DDB4EA6B8A49A6FA34325F8FD6647A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D9C72C3BAD0F4E44937D9E9F47029E /* Foundation.framework in Frameworks */,
+				81245AFD2F07B7CF32338A3E2D8BCE6C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +220,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B9B41B07FC727B63BF7260A4E5132B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE35BD9370EFF89F7FC3DFCC2E64A633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */,
+				42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +278,20 @@
 			path = "Target Support Files/Pods-FortniteAPI";
 			sourceTree = "<group>";
 		};
+		1C5665EB095878AFF6EDF550F213D95F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A833AE113EF2A789FF308A9888438FA2 /* Alamofire.framework */,
+				54E2F7760C3BD785B20EFF3145DA9A69 /* AlamofireImage.framework */,
+				AF1B6BA056AE491FE50E479701111FB9 /* GradientView.framework */,
+				801141FB48AC904CD7D7C188FF5F08C2 /* Pastel.framework */,
+				A6048A08BCE8D86C497B7BDAB8E8DA1E /* Pods_FortniteAPI.framework */,
+				88D2E2CCAA7D25907EBC62D49991AD62 /* Pods_FortniteAPITests.framework */,
+				86F4A36E331CB0E0DA417F1FE74C476A /* Pods_FortniteAPIUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1D2924F3A014D0DB79E0AC8EEF7F6004 /* Pods-FortniteAPITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +308,29 @@
 			);
 			name = "Pods-FortniteAPITests";
 			path = "Target Support Files/Pods-FortniteAPITests";
+			sourceTree = "<group>";
+		};
+		3ECD03AA521A4A175A9969B71E9C3B0F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */,
+				23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3EFD9EAE7BAF6976067163A0B5C05D15 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				235A36815B06FD7E515EBE9B6F019533 /* AlamofireImage.modulemap */,
+				78B4F72E16CEA993D854FB33D11C4CD2 /* AlamofireImage.xcconfig */,
+				E95D4785C801A99FB6FEA60C983B5D52 /* AlamofireImage-dummy.m */,
+				2582F9914EDF5D57705605B64055BDFA /* AlamofireImage-prefix.pch */,
+				8A02127E00DC3623C7B594742C017C12 /* AlamofireImage-umbrella.h */,
+				44C4B7A2EA74E7E6D0D5D5DE19B36053 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlamofireImage";
 			sourceTree = "<group>";
 		};
 		408E176362A8E271BB089CF118B82E33 /* Pods-FortniteAPIUITests */ = {
@@ -282,101 +351,115 @@
 			path = "Target Support Files/Pods-FortniteAPIUITests";
 			sourceTree = "<group>";
 		};
-		51A9B78D6A7E7FB5A465754528750815 /* iOS */ = {
+		4B9C6535719AC918AC4D7586BECCCF6F /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */,
+				50C951AB03EF321D0FD5959F07318E22 /* AFError.swift */,
+				2EB1B5CB02F65DCCF1CAE4475E3ECE7E /* Alamofire.swift */,
+				66186C2560ADFF080B721F42D9E54559 /* DispatchQueue+Alamofire.swift */,
+				63FEDD66D92AA95CFC223093BC5E458F /* MultipartFormData.swift */,
+				E27A58C21C139ABF054898F3ECF52B9A /* NetworkReachabilityManager.swift */,
+				D9A20494EAF3EE963B934B5B2F6730B8 /* Notifications.swift */,
+				E362646EDC59638FAECE8E38FAC65B34 /* ParameterEncoding.swift */,
+				F54F3C85E2171C5164D8ED6A2EA61591 /* Request.swift */,
+				8BAB05C245E8AEFA77075FB4F896602B /* Response.swift */,
+				FEF5BF696DE1685BA19696BEBC11C778 /* ResponseSerialization.swift */,
+				2F480C652F9176375CD87E42CA0ADCB5 /* Result.swift */,
+				57CDC10076C783AEC17FD64C56F04021 /* ServerTrustPolicy.swift */,
+				45A27CD1A8AF5A3A0F48494476C06E9A /* SessionDelegate.swift */,
+				3B2213BB684835714A16EA24DA779060 /* SessionManager.swift */,
+				F2831D192B4E6584E24B4FEA028101C4 /* TaskDelegate.swift */,
+				7B958C652BC0F8749FE60B1CFE3720C8 /* Timeline.swift */,
+				0ED10B746558834910B26602E7E24E1B /* Validation.swift */,
+				EFB4243FADEAA1451D9AA1128A363132 /* Support Files */,
 			);
-			name = iOS;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		59B91F212518421F271EBA85D5530651 /* Frameworks */ = {
+		4ED17A1685F9BCE26333E70D76B84583 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */,
-				51A9B78D6A7E7FB5A465754528750815 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		67C4217107C371C5E3EACC2942BE50E2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A342464B6593D01B4E08E0CB39E847D4 /* Alamofire.modulemap */,
-				CBDDBBD45414E5786A5A6F5D30CBF97C /* Alamofire.xcconfig */,
-				C483DBA8D70AF3542177E9DC78B60256 /* Alamofire-dummy.m */,
-				47A2374870B0D5F3397AE2C76F545BD7 /* Alamofire-prefix.pch */,
-				E44B1AEE991D9A19238B5978C1F39BE6 /* Alamofire-umbrella.h */,
-				6CA0D56604144E04E53CED22EF5857A6 /* Info.plist */,
+				BE21808189F83B258E31F346C00C9AC1 /* Info.plist */,
+				0CF158C5131B7E71460288ECF2A12148 /* Pastel.modulemap */,
+				E8966E5D69EA1CF6242752743AEC7405 /* Pastel.xcconfig */,
+				058AE2D9F63323F732058BD18C050A68 /* Pastel-dummy.m */,
+				C2B2228189C208127FE7500D538EAF2C /* Pastel-prefix.pch */,
+				94B58CF04C11BCD7F1A6200554E37C0A /* Pastel-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/Pastel";
 			sourceTree = "<group>";
 		};
-		6B639BF4F5A881EE775330C7675DE6CA /* AlamofireImage */ = {
+		4FE1757C2FB8092B409D2CD42DA31FD7 /* GradientView */ = {
 			isa = PBXGroup;
 			children = (
-				E79F005B8C236F6F73976E6C11A5BC95 /* AFIError.swift */,
-				E6B36AB518ECDB1F10C331CBF49076F3 /* Image.swift */,
-				AC01EA81FE23D9989586B07C7CA2665B /* ImageCache.swift */,
-				F22A30B437DFE25E75C3C9072D7D21DF /* ImageDownloader.swift */,
-				A8D9A099616F04658026DD86E73AC274 /* ImageFilter.swift */,
-				99EC95780C1F88C7C07BB5632FD6587E /* Request+AlamofireImage.swift */,
-				1A879205423CF5A5B913038EA90D075C /* UIButton+AlamofireImage.swift */,
-				2DFDE28DC34D6625569CFB2E72B6FEE3 /* UIImage+AlamofireImage.swift */,
-				415E8C32527EF0538EEAE8E55F3E5E97 /* UIImageView+AlamofireImage.swift */,
-				BF0FC1FB9A1AB778B43D6D749A5D8A60 /* Support Files */,
+				8C14928D312B93CD456A9A9D78334A3F /* GradientView.h */,
+				F85B8D2FE3CD63DB0E04FB3D914480C9 /* GradientView.swift */,
+				F7467E7CB4B7B537F6615E1BD5555C20 /* Support Files */,
 			);
-			name = AlamofireImage;
-			path = AlamofireImage;
+			name = GradientView;
+			path = GradientView;
 			sourceTree = "<group>";
 		};
-		6DF4A11DCDE58D7FDB3E68A69A212E95 /* Pods */ = {
+		77C0263AF9F60C02524DCC540DDFD173 /* Pastel */ = {
 			isa = PBXGroup;
 			children = (
-				A7AD162E8A5E9F339CAA203ECD00445E /* Alamofire */,
-				6B639BF4F5A881EE775330C7675DE6CA /* AlamofireImage */,
-				C7D9AFBCBFE607BB2638AB281253BD0D /* Pastel */,
+				517CCCF4BB56FF2D90E1C71576908393 /* PastelGradient.swift */,
+				A84356EAEF894F2BE294889F94DFB619 /* PastelView.swift */,
+				4ED17A1685F9BCE26333E70D76B84583 /* Support Files */,
 			);
-			name = Pods;
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
+		7B05826141F5DEB7AF13094100054778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */,
+				3ECD03AA521A4A175A9969B71E9C3B0F /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				59B91F212518421F271EBA85D5530651 /* Frameworks */,
-				6DF4A11DCDE58D7FDB3E68A69A212E95 /* Pods */,
-				87EF4867CAA4C39C2A3E75C3EDD3AB06 /* Products */,
+				7B05826141F5DEB7AF13094100054778 /* Frameworks */,
+				93F6073E18771DB547949B8FA57C568F /* Pods */,
+				1C5665EB095878AFF6EDF550F213D95F /* Products */,
 				95149948F6A08619CAD5CBF2FFFB2D02 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87EF4867CAA4C39C2A3E75C3EDD3AB06 /* Products */ = {
+		8EA43543DD04961BA867ACB3E0A3544C /* AlamofireImage */ = {
 			isa = PBXGroup;
 			children = (
-				0461CA4BE01B9D7B81C29F117CE2EBCB /* Alamofire.framework */,
-				C27B41D77351A55D79C3DE1152D36CAE /* AlamofireImage.framework */,
-				6EB12D6264CEEC7B332E71ED1BE435C1 /* Pastel.framework */,
-				399BF0CA18DABC5CF55226113EA3D90D /* Pods_FortniteAPI.framework */,
-				A48F7E3AA32C7F5D728F153DF46A75DB /* Pods_FortniteAPITests.framework */,
-				A0B0A1989E9167D90931BA8F812C2074 /* Pods_FortniteAPIUITests.framework */,
+				E50CF94AA5F9A750206B794CE1C7348F /* AFIError.swift */,
+				FF3F96DEB5A4E3DA1EE33E6746223D90 /* Image.swift */,
+				CDE001EA4F32170CFD0842F556EF52B8 /* ImageCache.swift */,
+				C66E10F7EB048D592FF15FB672D6CE50 /* ImageDownloader.swift */,
+				4A673606FA9E1C76A0A556EE8BBC418B /* ImageFilter.swift */,
+				19F653CE1CEE0AAE74A4D8C79DEC662C /* Request+AlamofireImage.swift */,
+				40316AF389D2D024E6F5573AC420857D /* UIButton+AlamofireImage.swift */,
+				8FB8B473872CFAF42FE745F3A3582F20 /* UIImage+AlamofireImage.swift */,
+				FB6731896D858FD27B3AA6D5F231DF3B /* UIImageView+AlamofireImage.swift */,
+				3EFD9EAE7BAF6976067163A0B5C05D15 /* Support Files */,
 			);
-			name = Products;
+			name = AlamofireImage;
+			path = AlamofireImage;
 			sourceTree = "<group>";
 		};
-		94888C589081DB574942AD449E8A0C26 /* Support Files */ = {
+		93F6073E18771DB547949B8FA57C568F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				91C76144A9A27BC22057B84640004319 /* Info.plist */,
-				2C50ECD39E7294CFA7200D9999DE5B35 /* Pastel.modulemap */,
-				C3E34311D9057200D33C852338E96E0E /* Pastel.xcconfig */,
-				B45E1453E2959B7B9FAD4C1322427238 /* Pastel-dummy.m */,
-				1446F178E607FFA26B754DA961ED07BA /* Pastel-prefix.pch */,
-				9C3322727D7E48FC8AD75AEE2E1AAE55 /* Pastel-umbrella.h */,
+				4B9C6535719AC918AC4D7586BECCCF6F /* Alamofire */,
+				8EA43543DD04961BA867ACB3E0A3544C /* AlamofireImage */,
+				4FE1757C2FB8092B409D2CD42DA31FD7 /* GradientView */,
+				77C0263AF9F60C02524DCC540DDFD173 /* Pastel */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pastel";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		95149948F6A08619CAD5CBF2FFFB2D02 /* Targets Support Files */ = {
@@ -389,55 +472,32 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A7AD162E8A5E9F339CAA203ECD00445E /* Alamofire */ = {
+		EFB4243FADEAA1451D9AA1128A363132 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				521DF2E85A5174271BDA8C1BBADFF674 /* AFError.swift */,
-				7A18F67BE581999F4394B38EB593576E /* Alamofire.swift */,
-				101198ECA2FF650495C0D203AF118E76 /* DispatchQueue+Alamofire.swift */,
-				1C093E84C1794C47071B285E6E0CA138 /* MultipartFormData.swift */,
-				56DBDF1FB3E711D20CCB8E08F7BEA590 /* NetworkReachabilityManager.swift */,
-				A087457E7C1496FD1909DD69F3120782 /* Notifications.swift */,
-				72E10A00E92F6117B4D3F0DB9D365A66 /* ParameterEncoding.swift */,
-				F08515E2AE6EA3B542EB52BD9269CD8B /* Request.swift */,
-				114EC53D858719CAF10AEEA27BF0D5C2 /* Response.swift */,
-				D0D44D7FEDB56BA78788474863E5E82F /* ResponseSerialization.swift */,
-				5891A5B270BCF9D2562C3D7052CE720E /* Result.swift */,
-				B2278EB3A889A6067F64B43A65BF789E /* ServerTrustPolicy.swift */,
-				9D268CE694783F5F7A0C4FC6FE65D5CA /* SessionDelegate.swift */,
-				0E9A3AB277D7147C5430518FCB7E548F /* SessionManager.swift */,
-				6855895C3DA2AEF5613EF134C5C29DC8 /* TaskDelegate.swift */,
-				E2B9EAE5AF1DF073FE73AC9C26EA65B3 /* Timeline.swift */,
-				5D1769E349BAB7E0042C5EBEFFA9BA92 /* Validation.swift */,
-				67C4217107C371C5E3EACC2942BE50E2 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		BF0FC1FB9A1AB778B43D6D749A5D8A60 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6CF868E90BA2559A2E67BB5AAC729ECA /* AlamofireImage.modulemap */,
-				27B1270BAA1ED71ECE9D1ED3C5531AE6 /* AlamofireImage.xcconfig */,
-				A476496AC584D246D0F49D5279FC272C /* AlamofireImage-dummy.m */,
-				C6A0F7F166363028F3E7E97E9E7FF0CE /* AlamofireImage-prefix.pch */,
-				85AD5F5C3E1B01E3DB057DB6B6F051C7 /* AlamofireImage-umbrella.h */,
-				E83F1AE5B118844D7A4DD51065F83776 /* Info.plist */,
+				E6A8EAD31B5AD12AFAA3761FEA174BDA /* Alamofire.modulemap */,
+				0B6D0CB644844E445390EE52C6D75121 /* Alamofire.xcconfig */,
+				24822529573AB9D940A6195F243F62CE /* Alamofire-dummy.m */,
+				971351457F02F6DA3A10225A16526062 /* Alamofire-prefix.pch */,
+				B16EA120753098525C33D0E4953CAFA8 /* Alamofire-umbrella.h */,
+				14594CFA96888E8355282F7CDED422D4 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AlamofireImage";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		C7D9AFBCBFE607BB2638AB281253BD0D /* Pastel */ = {
+		F7467E7CB4B7B537F6615E1BD5555C20 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F8237E52E7B7DD041D1EA30FDD8AD37 /* PastelGradient.swift */,
-				102813772AAF63E93BB7C2BC23B37FEE /* PastelView.swift */,
-				94888C589081DB574942AD449E8A0C26 /* Support Files */,
+				0A0BF34414000C6C3E1EED86C97521F0 /* GradientView.modulemap */,
+				0327F281D7DD81D72CA713A12BAB4CD2 /* GradientView.xcconfig */,
+				0EEC64147F3DF358BD416EFA95B102FC /* GradientView-dummy.m */,
+				AB41B3D2104F2CDE03E1E3760D7B5E6A /* GradientView-prefix.pch */,
+				F5FCE4C1AE360A49A02DD5AA6747D8C5 /* GradientView-umbrella.h */,
+				4D5E7A86AE88A2784282E449D53DC8B4 /* Info.plist */,
 			);
-			name = Pastel;
-			path = Pastel;
+			name = "Support Files";
+			path = "../Target Support Files/GradientView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +519,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		643398355E531E9A8CC78BB6F2AC4EE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02075C03C7F45DACBD6A5C3777CBCFF /* Pods-FortniteAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643622D93B0E37F2B8354051CCEB09B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,19 +535,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A138FAABE4D658DF1827F994E5F838CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */,
+				BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9E7EF3D66ECE2C90B303928F959AA35 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6006011C6C6333DB148CEA4E931AFAF1 /* Pods-FortniteAPI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,24 +563,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14FB2280F6370F96B9B8AB79F9D6E24F /* Pods-FortniteAPI */ = {
+		2D746AB91F12819F862B3A803736E892 /* Pods-FortniteAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E371C79470264FED9CEFCBE2BBE8CF7B /* Build configuration list for PBXNativeTarget "Pods-FortniteAPI" */;
+			buildConfigurationList = CE6C4F9E36683F61F359CBEC76BCD848 /* Build configuration list for PBXNativeTarget "Pods-FortniteAPI" */;
 			buildPhases = (
-				888DCC1822299B2750E5F7121156FC57 /* Sources */,
-				7C0570D17DDF7768B40D96D6DE7EE58D /* Frameworks */,
-				C9E7EF3D66ECE2C90B303928F959AA35 /* Headers */,
+				A1CD4B7B9C719D9B8418708F7D2704BE /* Sources */,
+				98DDB4EA6B8A49A6FA34325F8FD6647A /* Frameworks */,
+				643398355E531E9A8CC78BB6F2AC4EE6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				489A98F62A80A38488AD9B4BAE46D903 /* PBXTargetDependency */,
-				4228CD6F2C5FCD6010D9C5B35EAA3C48 /* PBXTargetDependency */,
-				091EC16CE040A8D049E7CB2270C816C7 /* PBXTargetDependency */,
+				67A3AFDBCCF31A1E429685A739E3C69C /* PBXTargetDependency */,
+				774A69895E7E614A06CA429D5B5B515F /* PBXTargetDependency */,
+				984AAAACEC936C5832AF4283EF49B616 /* PBXTargetDependency */,
+				A0B4B83D2723CC3561B31882AEE3E324 /* PBXTargetDependency */,
 			);
 			name = "Pods-FortniteAPI";
 			productName = "Pods-FortniteAPI";
-			productReference = 399BF0CA18DABC5CF55226113EA3D90D /* Pods_FortniteAPI.framework */;
+			productReference = A6048A08BCE8D86C497B7BDAB8E8DA1E /* Pods_FortniteAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		34FC6CD8810F38FE7C5F0E4CD4AF5B71 /* Pods-FortniteAPIUITests */ = {
@@ -528,7 +598,24 @@
 			);
 			name = "Pods-FortniteAPIUITests";
 			productName = "Pods-FortniteAPIUITests";
-			productReference = A0B0A1989E9167D90931BA8F812C2074 /* Pods_FortniteAPIUITests.framework */;
+			productReference = 86F4A36E331CB0E0DA417F1FE74C476A /* Pods_FortniteAPIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BF00F9E712E93DA7B03ACF46198775B /* GradientView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02071E6F032538B45A8AE4C0C857C706 /* Build configuration list for PBXNativeTarget "GradientView" */;
+			buildPhases = (
+				C66C74C2666932D339741EE4DB6D36B8 /* Sources */,
+				BE35BD9370EFF89F7FC3DFCC2E64A633 /* Frameworks */,
+				A138FAABE4D658DF1827F994E5F838CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradientView;
+			productName = GradientView;
+			productReference = AF1B6BA056AE491FE50E479701111FB9 /* GradientView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -545,7 +632,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 0461CA4BE01B9D7B81C29F117CE2EBCB /* Alamofire.framework */;
+			productReference = A833AE113EF2A789FF308A9888438FA2 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8E1D092BF86FB8C0ABE055E421219B71 /* Pastel */ = {
@@ -562,7 +649,7 @@
 			);
 			name = Pastel;
 			productName = Pastel;
-			productReference = 6EB12D6264CEEC7B332E71ED1BE435C1 /* Pastel.framework */;
+			productReference = 801141FB48AC904CD7D7C188FF5F08C2 /* Pastel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9957311BFFD11479664E56CD1FC3536E /* Pods-FortniteAPITests */ = {
@@ -579,7 +666,7 @@
 			);
 			name = "Pods-FortniteAPITests";
 			productName = "Pods-FortniteAPITests";
-			productReference = A48F7E3AA32C7F5D728F153DF46A75DB /* Pods_FortniteAPITests.framework */;
+			productReference = 88D2E2CCAA7D25907EBC62D49991AD62 /* Pods_FortniteAPITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */ = {
@@ -597,7 +684,7 @@
 			);
 			name = AlamofireImage;
 			productName = AlamofireImage;
-			productReference = C27B41D77351A55D79C3DE1152D36CAE /* AlamofireImage.framework */;
+			productReference = 54E2F7760C3BD785B20EFF3145DA9A69 /* AlamofireImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -617,14 +704,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87EF4867CAA4C39C2A3E75C3EDD3AB06 /* Products */;
+			productRefGroup = 1C5665EB095878AFF6EDF550F213D95F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */,
+				4BF00F9E712E93DA7B03ACF46198775B /* GradientView */,
 				8E1D092BF86FB8C0ABE055E421219B71 /* Pastel */,
-				14FB2280F6370F96B9B8AB79F9D6E24F /* Pods-FortniteAPI */,
+				2D746AB91F12819F862B3A803736E892 /* Pods-FortniteAPI */,
 				9957311BFFD11479664E56CD1FC3536E /* Pods-FortniteAPITests */,
 				34FC6CD8810F38FE7C5F0E4CD4AF5B71 /* Pods-FortniteAPIUITests */,
 			);
@@ -657,14 +745,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		888DCC1822299B2750E5F7121156FC57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3BCBA024F82A983D12EF6C52326DB01 /* Pods-FortniteAPI-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9175DF6E5C72BC0972090DB37B76A5F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -680,6 +760,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A5FC76995CAC31A55945352A5E2D23 /* Pods-FortniteAPIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CD4B7B9C719D9B8418708F7D2704BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB33A0D071A03C5C50A732ADDACE85DA /* Pods-FortniteAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66C74C2666932D339741EE4DB6D36B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */,
+				55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,23 +808,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		091EC16CE040A8D049E7CB2270C816C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pastel;
-			target = 8E1D092BF86FB8C0ABE055E421219B71 /* Pastel */;
-			targetProxy = 3AB331FE99446ABFE5241B2F85335C67 /* PBXContainerItemProxy */;
-		};
-		4228CD6F2C5FCD6010D9C5B35EAA3C48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AlamofireImage;
-			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
-			targetProxy = A7B8DAACFD5E45A9C9121D06D195EF87 /* PBXContainerItemProxy */;
-		};
-		489A98F62A80A38488AD9B4BAE46D903 /* PBXTargetDependency */ = {
+		67A3AFDBCCF31A1E429685A739E3C69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 32FB90C92C6427456368434AFFD6C6DE /* PBXContainerItemProxy */;
+			targetProxy = C257D3BBA84243D494B39516CDBEC277 /* PBXContainerItemProxy */;
+		};
+		774A69895E7E614A06CA429D5B5B515F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireImage;
+			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
+			targetProxy = 1CD9483D45BFD21A2B5656081F6E1BAA /* PBXContainerItemProxy */;
 		};
 		8937A2057A0DAADF003B7C65E7CE115D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -735,9 +826,55 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */;
 		};
+		984AAAACEC936C5832AF4283EF49B616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GradientView;
+			target = 4BF00F9E712E93DA7B03ACF46198775B /* GradientView */;
+			targetProxy = 5375080AD8709D60FF78360C53DB276B /* PBXContainerItemProxy */;
+		};
+		A0B4B83D2723CC3561B31882AEE3E324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 8E1D092BF86FB8C0ABE055E421219B71 /* Pastel */;
+			targetProxy = 520D4B6298E7113B44BA5FB2001A4F63 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00EBD4EAC4B83FBB46AD2F7BA81AA308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9684788250DA7BEF3AAC9750122687 /* Pods-FortniteAPI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FortniteAPI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FortniteAPI/Pods-FortniteAPI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FortniteAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		05634D5A909FFC23A5E8DA907205EB92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0204E6127E5338A36AA3B806653C4375 /* Pods-FortniteAPITests.debug.xcconfig */;
@@ -805,7 +942,7 @@
 		};
 		1C5DAB39976688A93021E071A70593C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27B1270BAA1ED71ECE9D1ED3C5531AE6 /* AlamofireImage.xcconfig */;
+			baseConfigurationReference = 78B4F72E16CEA993D854FB33D11C4CD2 /* AlamofireImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -928,41 +1065,7 @@
 			};
 			name = Debug;
 		};
-		542EC1484B9370039DD2B71BC5CB11C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B9684788250DA7BEF3AAC9750122687 /* Pods-FortniteAPI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FortniteAPI/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FortniteAPI/Pods-FortniteAPI.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FortniteAPI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		60DA760D50B8161EEF33820CD40CD515 /* Release */ = {
+		40BDC96B72E6EE73BD0B96D115D13B09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A947D7F7A2E80FADAB3C1F1635376B0 /* Pods-FortniteAPI.release.xcconfig */;
 			buildSettings = {
@@ -998,7 +1101,7 @@
 		};
 		751B90BBDF8E0306B9FEBD3AFC3D32D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27B1270BAA1ED71ECE9D1ED3C5531AE6 /* AlamofireImage.xcconfig */;
+			baseConfigurationReference = 78B4F72E16CEA993D854FB33D11C4CD2 /* AlamofireImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1029,7 +1132,7 @@
 		};
 		789E2BBDB801AB11A5B452216465DD7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3E34311D9057200D33C852338E96E0E /* Pastel.xcconfig */;
+			baseConfigurationReference = E8966E5D69EA1CF6242752743AEC7405 /* Pastel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1145,9 +1248,72 @@
 			};
 			name = Release;
 		};
+		9021C7A638F9B41D03901D7F8CCDB906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0327F281D7DD81D72CA713A12BAB4CD2 /* GradientView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientView/GradientView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GradientView/GradientView.modulemap";
+				PRODUCT_NAME = GradientView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C6E0C9FE20EE47698B411DEEA91FA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0327F281D7DD81D72CA713A12BAB4CD2 /* GradientView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientView/GradientView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GradientView/GradientView.modulemap";
+				PRODUCT_NAME = GradientView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBDDBBD45414E5786A5A6F5D30CBF97C /* Alamofire.xcconfig */;
+			baseConfigurationReference = 0B6D0CB644844E445390EE52C6D75121 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1178,7 +1344,7 @@
 		};
 		B8CA02655A4B738D82484691EE8CA58F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBDDBBD45414E5786A5A6F5D30CBF97C /* Alamofire.xcconfig */;
+			baseConfigurationReference = 0B6D0CB644844E445390EE52C6D75121 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1210,7 +1376,7 @@
 		};
 		D5F2EC11DE534CB19B94D0E80CA121A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3E34311D9057200D33C852338E96E0E /* Pastel.xcconfig */;
+			baseConfigurationReference = E8966E5D69EA1CF6242752743AEC7405 /* Pastel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1248,6 +1414,15 @@
 			buildConfigurations = (
 				751B90BBDF8E0306B9FEBD3AFC3D32D5 /* Debug */,
 				1C5DAB39976688A93021E071A70593C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02071E6F032538B45A8AE4C0C857C706 /* Build configuration list for PBXNativeTarget "GradientView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9021C7A638F9B41D03901D7F8CCDB906 /* Debug */,
+				9C6E0C9FE20EE47698B411DEEA91FA59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1297,11 +1472,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E371C79470264FED9CEFCBE2BBE8CF7B /* Build configuration list for PBXNativeTarget "Pods-FortniteAPI" */ = {
+		CE6C4F9E36683F61F359CBEC76BCD848 /* Build configuration list for PBXNativeTarget "Pods-FortniteAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				542EC1484B9370039DD2B71BC5CB11C2 /* Debug */,
-				60DA760D50B8161EEF33820CD40CD515 /* Release */,
+				00EBD4EAC4B83FBB46AD2F7BA81AA308 /* Debug */,
+				40BDC96B72E6EE73BD0B96D115D13B09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
