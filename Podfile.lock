@@ -4,19 +4,22 @@ PODS:
     - Alamofire (~> 4.5)
   - GradientView (2.3.3)
   - Pastel (0.3.0)
+  - Shimmer (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
   - AlamofireImage
   - GradientView (~> 2.3)
   - Pastel
+  - Shimmer
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
 
-PODFILE CHECKSUM: c94f27aaee3e9f8bee57674095a4270ab93f6925
+PODFILE CHECKSUM: 68a1e2f2ea33336d9ac2e9fe9df494b486f5bdc0
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.3.1

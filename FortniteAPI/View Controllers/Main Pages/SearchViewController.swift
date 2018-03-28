@@ -8,6 +8,7 @@
 
 import UIKit
 import Pastel
+import Shimmer
 
 class SearchViewController: UIViewController {
     
@@ -15,10 +16,12 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBox: UITextField!
     @IBOutlet weak var searchLabel: UIButton!
     
+    @IBOutlet weak var goldScar: UIImageView!
     @IBOutlet weak var xboxButton: UIButton!
     @IBOutlet weak var psnButton: UIButton!
     @IBOutlet weak var pcButton: UIButton!
     
+//    var shimmer: FBShimmeringView!
     
     let consoles = ["XBone", "PS4", "PC"]
     var chosenConsole = "XBone"
@@ -29,6 +32,20 @@ class SearchViewController: UIViewController {
         searchLabel.layer.shadowOpacity = 15
         titleLabel.layer.shadowOpacity = 15
         searchBox.layer.cornerRadius = 15
+//        shimmer = FBShimmeringView(frame: self.goldScar.frame)
+//        shimmer.contentView = goldScar
+//        self.view.addSubview(shimmer)
+//        shimmer.shimmeringSpeed = 100
+//        shimmer.isShimmering = true
+        goldScar.layer.shadowColor = UIColor.orange.cgColor
+        goldScar.layer.shadowRadius = 4
+        goldScar.layer.shadowOpacity = 0.9
+        goldScar.layer.shadowOffset = CGSize.zero
+        goldScar.layer.masksToBounds = false
+        goldScar.startGlowingWithColor(color: UIColor.yellow, intensity: 0.3)
+        goldScar.startGlowingWithColor(color: UIColor.orange, intensity: 0.5)
+
+        //titleLabel.startGlowing()
         
         /*
         let pastelView = PastelView(frame: view.bounds)
@@ -52,6 +69,10 @@ class SearchViewController: UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    @IBAction func blah(_ sender: Any) {
+        print("hello")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

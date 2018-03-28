@@ -35,6 +35,19 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ndp-AN-8tr">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="goldscar" translatesAutoresizingMaskIntoConstraints="NO" id="0WQ-qA-c0e">
+                                            <rect key="frame" x="47" y="374" width="281" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slv-96-WWQ">
+                                            <rect key="frame" x="47" y="374" width="281" height="101"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="blah:" destination="k73-T2-LEh" eventType="touchUpInside" id="n2J-rT-j8O"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -96,6 +109,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Player Search" id="Uq7-bb-pnL"/>
                     <connections>
+                        <outlet property="goldScar" destination="0WQ-qA-c0e" id="kic-xk-5TS"/>
                         <outlet property="pcButton" destination="brB-94-Omc" id="d0j-ip-vGr"/>
                         <outlet property="psnButton" destination="MBd-ph-jfb" id="vRM-mm-01K"/>
                         <outlet property="searchBox" destination="fv7-ME-yQt" id="i5A-iQ-jFa"/>
@@ -482,6 +496,21 @@
             </objects>
             <point key="canvasLocation" x="1493.5999999999999" y="107.49625187406298"/>
         </scene>
+        <!--Ninja View Controller-->
+        <scene sceneID="l5r-7K-ZsB">
+            <objects>
+                <viewController id="cym-PN-Glp" customClass="NinjaViewController" customModule="FortniteAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VO9-xq-7O8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ivy-Xp-iUJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0R9-eF-eR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="610"/>
+        </scene>
         <!--Esports Teams-->
         <scene sceneID="tnh-G8-XPb">
             <objects>
@@ -740,6 +769,7 @@
         <image name="FNwallpaper5" width="499" height="710"/>
         <image name="Fazelogo" width="300" height="300"/>
         <image name="TSMlogo" width="300" height="300"/>
+        <image name="goldscar" width="281" height="101"/>
         <image name="icons8-available-updates-26" width="26" height="26"/>
         <image name="icons8-find-user-male-26" width="26" height="26"/>
         <image name="icons8-leaderboard-26" width="26" height="26"/>
