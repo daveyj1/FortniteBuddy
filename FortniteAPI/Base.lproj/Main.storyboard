@@ -25,9 +25,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FNwallpaper3" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-79-tAN">
-                                <rect key="frame" x="0.0" y="65" width="375" height="553"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="fortnitegg" translatesAutoresizingMaskIntoConstraints="NO" id="4iD-jT-gb1">
+                                <rect key="frame" x="-1" y="63" width="377" height="554"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="St1-s3-bZM">
                                 <rect key="frame" x="0.0" y="65" width="375" height="553"/>
@@ -36,6 +36,26 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortnite Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-WE-Xpe">
+                                            <rect key="frame" x="-1" y="45" width="376" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="71"/>
+                                            <color key="textColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="0.66841727275063256" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM4-iK-drL">
+                                            <rect key="frame" x="275" y="150" width="86" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="36"/>
+                                            <state key="normal" title="Search!">
+                                                <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="titleShadowColor" red="0.7265394926071167" green="0.32947707176208496" blue="0.95298606157302856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="searchSegue" id="cyd-BF-vyR"/>
+                                            </connections>
+                                        </button>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="goldscar" translatesAutoresizingMaskIntoConstraints="NO" id="0WQ-qA-c0e">
                                             <rect key="frame" x="47" y="374" width="281" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -47,38 +67,28 @@
                                                 <action selector="blah:" destination="k73-T2-LEh" eventType="touchUpInside" id="n2J-rT-j8O"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGh-CT-BD1">
+                                            <rect key="frame" x="193" y="508" width="174" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Unnecessary AR feature">
+                                                <color key="titleColor" red="0.90643951840000003" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="arViewThing:" destination="k73-T2-LEh" eventType="touchUpInside" id="brd-C5-pbw"/>
+                                            </connections>
+                                        </button>
+                                        <textField alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-ME-yQt">
+                                            <rect key="frame" x="14" y="159" width="223" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM4-iK-drL">
-                                <rect key="frame" x="207" y="217" width="168" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="36"/>
-                                <state key="normal" title="Search!">
-                                    <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.7265394926071167" green="0.32947707176208496" blue="0.95298606157302856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="searchSegue" id="cyd-BF-vyR"/>
-                                </connections>
-                            </button>
-                            <textField alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-ME-yQt">
-                                <rect key="frame" x="16" y="220" width="196" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortnite Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-WE-Xpe">
-                                <rect key="frame" x="-1" y="90" width="376" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="71"/>
-                                <color key="textColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.66841727275063256" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-EG-BgO">
                                 <rect key="frame" x="16" y="323" width="54" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,6 +127,7 @@
                         <outlet property="titleLabel" destination="PE0-WE-Xpe" id="3rD-fF-PMV"/>
                         <outlet property="xboxButton" destination="rKQ-EG-BgO" id="kqY-kW-AKI"/>
                         <segue destination="cym-PN-Glp" kind="show" identifier="ninjaSegue" id="1uC-5G-bgj"/>
+                        <segue destination="mgm-tO-gEf" kind="show" identifier="arSegue" id="31W-7U-jsA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOQ-o2-Y5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,7 +209,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ra7-Ll-Ctb"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Leaderboad" id="xd6-Kd-sac"/>
+                    <navigationItem key="navigationItem" title="Leaderboard" id="xd6-Kd-sac"/>
                     <connections>
                         <outlet property="subView" destination="pa0-o1-Z6c" id="gBr-b9-IbW"/>
                         <outlet property="tableView" destination="Vwv-5z-1oE" id="T97-wR-RCZ"/>
@@ -520,7 +531,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0R9-eF-eR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2528.8000000000002" y="335.98200899550227"/>
+            <point key="canvasLocation" x="2521" y="531"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dnQ-ed-RJL">
+            <objects>
+                <viewController id="mgm-tO-gEf" customClass="ARViewController" customModule="FortniteAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZaO-lf-eGx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-Mb-rA5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GvV-Oz-enA"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="L4F-Mb-rA5" id="vQn-ll-WtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuv-C1-EXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520.8000000000002" y="-175.86206896551727"/>
         </scene>
         <!--Esports Teams-->
         <scene sceneID="tnh-G8-XPb">
@@ -780,6 +815,7 @@
         <image name="FNwallpaper5" width="499" height="710"/>
         <image name="Fazelogo" width="300" height="300"/>
         <image name="TSMlogo" width="300" height="300"/>
+        <image name="fortnitegg" width="537" height="960"/>
         <image name="goldscar" width="281" height="101"/>
         <image name="icons8-available-updates-26" width="26" height="26"/>
         <image name="icons8-find-user-male-26" width="26" height="26"/>
