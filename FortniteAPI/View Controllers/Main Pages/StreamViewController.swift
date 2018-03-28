@@ -23,7 +23,7 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-        
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         getStreams()
     }
 
@@ -102,7 +102,7 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             print("URL NOT SET")
         }
-        
+        cell.layer.backgroundColor = UIColor.clear.cgColor
         return cell
     }
     
