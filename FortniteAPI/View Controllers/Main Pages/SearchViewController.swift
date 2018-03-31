@@ -47,23 +47,23 @@ class SearchViewController: UIViewController {
         view.addSubview(gview)
         gview.isUserInteractionEnabled = false
         //***********************
-        let g2view = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
-        
-        let pastelView2 = PastelView(frame: view.bounds)
-        // Custom Direction
-        pastelView2.startPastelPoint = .topLeft
-        pastelView2.endPastelPoint = .topRight
-        // Custom Duration
-        pastelView2.animationDuration = 3.0
-        // Custom Color
-        pastelView2.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
-                               UIColor(red: 150/255, green: 150/255, blue: 150/255, alpha: 1.0)])
-        pastelView2.startAnimation()
-        // add the gradient layer to the views layer for rendering
-        g2view.insertSubview(pastelView2, at: 0)
-        g2view.mask = searchLabel
-        view.addSubview(g2view)
-        g2view.isUserInteractionEnabled = false
+//        let g2view = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
+//
+//        let pastelView2 = PastelView(frame: view.bounds)
+//        // Custom Direction
+//        pastelView2.startPastelPoint = .topLeft
+//        pastelView2.endPastelPoint = .topRight
+//        // Custom Duration
+//        pastelView2.animationDuration = 3.0
+//        // Custom Color
+//        pastelView2.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
+//                               UIColor(red: 150/255, green: 150/255, blue: 150/255, alpha: 1.0)])
+//        pastelView2.startAnimation()
+//        // add the gradient layer to the views layer for rendering
+//        g2view.insertSubview(pastelView2, at: 0)
+//        g2view.mask = searchLabel
+//        view.addSubview(g2view)
+        //g2view.isUserInteractionEnabled = false
         //************************
         xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
         searchBox.layer.cornerRadius = 15
@@ -92,6 +92,11 @@ class SearchViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ninjaSegue")
+        {
+            //performSegue(withIdentifier: "ninjaSegue", sender: nil)
+        }
+        else {
         if searchBox.text! == "" {
             return
         }
@@ -105,6 +110,7 @@ class SearchViewController: UIViewController {
         }
         if chosenConsole == "PC" {
             detailViewController.console = "pc"
+        }
         }
     }
     
