@@ -8,7 +8,7 @@ The following **required** user stories are complete:
 
 - [X] User can search for a play on a specific platformar
 - [X] User can see a list of Twitch.tv streamers that are currently live and follow a link to watch that streamer
-- [ ] User can see a list of popular Esports teams and look at each player's stats on the team
+- [X] User can see a list of popular Esports teams and look at each player's stats on the team
 - [X] User can see a leaderboard of the top players in the world
 - [X] User can see updates from the developer related to the game or exciting news about the game
 
@@ -21,6 +21,7 @@ The following **stretch** user stories are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+<img src='https://i.imgur.com/7UZCxLa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://i.imgur.com/qBbO4wB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
