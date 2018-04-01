@@ -21,6 +21,7 @@ The following **stretch** user stories are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
 <img src='https://i.imgur.com/7UZCxLa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://i.imgur.com/qBbO4wB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
