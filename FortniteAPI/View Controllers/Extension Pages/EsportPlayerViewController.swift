@@ -51,34 +51,46 @@ class EsportPlayerViewController: UIViewController {
         if segue.identifier == "firstPlayerSegue" {
             if teamLabel.text == "Optic Gaming" {
                 dvc.username = opticPlayers[0]
+                dvc.console = "pc"
             } else if teamLabel.text == "Faze Clan" {
                 dvc.username = fazePlayers[0]
+                dvc.console = "pc"
             } else {
                 dvc.username = tsmPlayers[0]
+                dvc.console = "pc"
             }
         } else if segue.identifier == "secondPlayerSegue" {
             if teamLabel.text == "Optic Gaming" {
                 dvc.username = opticPlayers[1]
+                dvc.console = "pc"
             } else if teamLabel.text == "Faze Clan" {
                 dvc.username = fazePlayers[1]
+                dvc.console = "pc"
             } else {
                 dvc.username = tsmPlayers[1]
+                dvc.console = "pc"
             }
         } else if segue.identifier == "thirdPlayerSegue" {
             if teamLabel.text == "Optic Gaming" {
                 dvc.username = opticPlayers[2]
+                dvc.console = "pc"
             } else if teamLabel.text == "Faze Clan" {
                 dvc.username = fazePlayers[2]
+                dvc.console = "pc"
             } else {
                 dvc.username = tsmPlayers[2]
+                dvc.console = "pc"
             }
         } else if segue.identifier == "fourthPlayerSegue" {
             if teamLabel.text == "Optic Gaming" {
                 dvc.username = opticPlayers[3]
+                dvc.console = "pc"
             } else if teamLabel.text == "Faze Clan" {
                 dvc.username = fazePlayers[3]
+                dvc.console = "pc"
             } else {
                 dvc.username = tsmPlayers[3]
+                dvc.console = "pc"
             }
         }
     }

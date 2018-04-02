@@ -48,8 +48,10 @@ class ViewController: UIViewController {
         if username == "" {
             return
         }
+        print(username)
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
         let encoded = url.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        print(encoded)
         guard let urlString = URL(string: encoded) else {
             print("https://api.fortnitetracker.com/v1/profile/\(console)/\(username)")
             return
@@ -63,7 +65,6 @@ class ViewController: UIViewController {
                 guard let usableData = data else {
                     return
                 }
-                
                 guard let json = try! JSONSerialization.jsonObject(with: usableData, options: []) as? [String: Any] else {
                     return
                 }

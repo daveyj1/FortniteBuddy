@@ -24,6 +24,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.estimatedRowHeight = 115
         
         tableView.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.reloadData()
         
         /*
         let layer = CAGradientLayer()
