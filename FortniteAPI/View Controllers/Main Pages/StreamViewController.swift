@@ -11,7 +11,7 @@ import AlamofireImage
 
 class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    var refreshControl: UIRefreshControl!
     @IBOutlet weak var tableView: UITableView!
     var streams: [[String: Any]] = [[:]]
 
@@ -25,10 +25,19 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.estimatedRowHeight = 100
         tableView.layer.backgroundColor = UIColor.clear.cgColor
         getStreams()
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(StreamViewController.refresh(sender:)), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refreshControl)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+        getStreams()
+        refreshControl.endRefreshing()
     }
     
     func getStreams() {
@@ -52,12 +61,6 @@ class StreamViewController: UIViewController, UITableViewDelegate, UITableViewDa
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            /*
-            for (key, _) in streams {
-                print("d")
-                print(key)
-            }
-            */
         }
         task.resume()
     }

@@ -27,7 +27,6 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let gview = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
         
         let pastelView1 = PastelView(frame: view.bounds)
@@ -46,34 +45,15 @@ class SearchViewController: UIViewController {
         gview.mask = titleLabel
         view.addSubview(gview)
         gview.isUserInteractionEnabled = false
-        //***********************
-//        let g2view = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
-//
-//        let pastelView2 = PastelView(frame: view.bounds)
-//        // Custom Direction
-//        pastelView2.startPastelPoint = .topLeft
-//        pastelView2.endPastelPoint = .topRight
-//        // Custom Duration
-//        pastelView2.animationDuration = 3.0
-//        // Custom Color
-//        pastelView2.setColors([UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0),
-//                               UIColor(red: 150/255, green: 150/255, blue: 150/255, alpha: 1.0)])
-//        pastelView2.startAnimation()
-//        // add the gradient layer to the views layer for rendering
-//        g2view.insertSubview(pastelView2, at: 0)
-//        g2view.mask = searchLabel
-//        view.addSubview(g2view)
-        //g2view.isUserInteractionEnabled = false
-        //************************
         xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
         searchBox.layer.cornerRadius = 15
-        goldScar.layer.shadowColor = UIColor.orange.cgColor
+        goldScar.layer.shadowColor = UIColor.purple.cgColor
         goldScar.layer.shadowRadius = 4
         goldScar.layer.shadowOpacity = 0.9
         goldScar.layer.shadowOffset = CGSize.zero
         goldScar.layer.masksToBounds = false
-        goldScar.startGlowingWithColor(color: UIColor.yellow, intensity: 0.3)
-        goldScar.startGlowingWithColor(color: UIColor.orange, intensity: 0.5)
+        goldScar.startGlowingWithColor(color: UIColor.blue, intensity: 0.3)
+        goldScar.startGlowingWithColor(color: UIColor.red, intensity: 0.3)
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
