@@ -237,14 +237,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FNwallpaper3" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-co-Kla">
-                                        <rect key="frame" x="0.0" y="4" width="375" height="553"/>
+                                        <rect key="frame" x="0.0" y="4" width="375" height="563"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-yb-EVj">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="558"/>
+                                        <rect key="frame" x="0.0" y="3" width="375" height="564"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="FPP-U5-TbB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="564"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                         <blurEffect style="light"/>

@@ -28,7 +28,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let gview = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
-        
+    
         let pastelView1 = PastelView(frame: view.bounds)
         // Custom Direction
         pastelView1.startPastelPoint = .topLeft

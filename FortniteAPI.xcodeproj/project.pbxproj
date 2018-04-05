@@ -722,11 +722,12 @@
 			baseConfigurationReference = 47016CDB88EB7DBBC9C2337B /* Pods-FortniteAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joey Dafforn (WKP8U6Y3CT)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKP8U6Y3CT;
 				INFOPLIST_FILE = FortniteAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Joe.FortniteAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeydafforn.fortnitebuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -738,11 +739,12 @@
 			baseConfigurationReference = 148B917633367A2B99AA062A /* Pods-FortniteAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joey Dafforn (WKP8U6Y3CT)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKP8U6Y3CT;
 				INFOPLIST_FILE = FortniteAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Joe.FortniteAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeydafforn.fortnitebuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
