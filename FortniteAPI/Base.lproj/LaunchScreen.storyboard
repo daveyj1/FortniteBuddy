@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fortniteLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="j9I-wE-s9f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortniteLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="j9I-wE-s9f">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j9I-wE-s9f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8i0-d8-rf5"/>
+                            <constraint firstItem="j9I-wE-s9f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SP8-n6-c5T"/>
+                            <constraint firstItem="j9I-wE-s9f" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Z0e-eO-9Wb"/>
+                            <constraint firstItem="j9I-wE-s9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t6o-xk-qVd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
