@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     
     func getSoloStats() {
         if username == "" {
+            playerNotFound()
             return
         }
         print(username)
@@ -73,6 +74,7 @@ class ViewController: UIViewController {
                     if error == "Player Not Found" {
                         print("player not found")
                         self.working = false
+                        self.playerNotFound()
                     }
                 }
                 
@@ -158,6 +160,7 @@ class ViewController: UIViewController {
     
     func getDuoStats() {
         if username == "" {
+            playerNotFound()
             return
         }
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
@@ -183,6 +186,7 @@ class ViewController: UIViewController {
                     if error == "Player Not Found" {
                         print("player not found")
                         self.working = false
+                        self.playerNotFound()
                     }
                 }
                 
@@ -268,6 +272,7 @@ class ViewController: UIViewController {
     
     func getSquadStats() {
         if username == "" {
+            playerNotFound()
             return
         }
         let url = "https://api.fortnitetracker.com/v1/profile/\(console)/\(username)"
@@ -293,6 +298,7 @@ class ViewController: UIViewController {
                     if error == "Player Not Found" {
                         print("player not found")
                         self.working = false
+                        self.playerNotFound()
                     }
                 }
                 
@@ -437,6 +443,19 @@ class ViewController: UIViewController {
             }
         }
         task.resume()
+    }
+    
+    func playerNotFound() {
+        OperationQueue.main.addOperation {
+            self.usernameLabel.text = "Player Not Found"
+            self.winsLabel.text = "Wins: NA"
+            self.killsLabel.text = "Kills: NA"
+            self.survivalTimeLabel.text = "Average Match Time: NA"
+            self.scoreLabel.text = "Score: NA"
+            self.killDeathLabel.text = "Kill/Death: NA"
+            self.KillsPerMatchLabel.text = "Kills per Match: NA"
+            self.ScorePerMatchLabel.text = "Score per Match: NA"
+        }
     }
     
     @IBAction func selectMatchType(_ sender: UISegmentedControl) {

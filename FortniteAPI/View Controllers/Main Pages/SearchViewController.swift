@@ -64,19 +64,15 @@ class SearchViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func arViewThing(_ sender: Any) {
-        performSegue(withIdentifier: "arSegue", sender: nil)
-    }
     @IBAction func blah(_ sender: Any) {
         performSegue(withIdentifier: "ninjaSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "ninjaSegue")
-        {
+        //if (segue.identifier == "ninjaSegue")
+        //{
             //performSegue(withIdentifier: "ninjaSegue", sender: nil)
-        }
-        else {
+        //}
         if searchBox.text! == "" {
             return
         }
@@ -90,7 +86,6 @@ class SearchViewController: UIViewController {
         }
         if chosenConsole == "PC" {
             detailViewController.console = "pc"
-        }
         }
     }
     
