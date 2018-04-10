@@ -8,15 +8,31 @@
 
 import UIKit
 
-class NinjaViewController: UIViewController {
+class NinjaViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var youtubeWebView: UIWebView!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        youtubeWebView.loadRequest(NSURLRequest(url: NSURL(string: "https://www.youtube.com/results?search_query=fortnite")! as URL) as URLRequest)
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = UIColor.black
+        doTheThing()
         // Do any additional setup after loading the view.
     }
 
+    func doTheThing() {
+        youtubeWebView.loadRequest(NSURLRequest(url: NSURL(string: "https://www.youtube.com/results?search_query=fortnite")! as URL) as URLRequest)
+    }
+    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        activityIndicator.startAnimating()
+    }// show indicator
+
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        activityIndicator.stopAnimating()
+    } // hide indicator
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

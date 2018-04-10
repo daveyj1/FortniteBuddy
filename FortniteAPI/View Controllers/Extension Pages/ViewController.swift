@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
-//import Alamofire
+import NVActivityIndicatorView
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var winsLabel: UILabel!
@@ -38,13 +38,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let frame = self.view.frame
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = UIColor.white
         getSoloStats()
-        //getDuoStats()
-        //getSquadStats()
-        //getStats()
     }
     
     func getSoloStats() {
+        activityIndicator.startAnimating()
+
         if username == "" {
             playerNotFound()
             return
@@ -153,12 +155,16 @@ class ViewController: UIViewController {
                     self.KillsPerMatchLabel.text = "Kills per Match: NA"
                     self.ScorePerMatchLabel.text = "Score per Match: NA"
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
         task.resume()
+
     }
     
     func getDuoStats() {
+        activityIndicator.startAnimating()
+
         if username == "" {
             playerNotFound()
             return
@@ -265,12 +271,15 @@ class ViewController: UIViewController {
                     self.KillsPerMatchLabel.text = "Kills per Match: NA"
                     self.ScorePerMatchLabel.text = "Score per Match: NA"
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
         task.resume()
     }
     
     func getSquadStats() {
+        activityIndicator.startAnimating()
+
         if username == "" {
             playerNotFound()
             return
@@ -377,6 +386,7 @@ class ViewController: UIViewController {
                     self.KillsPerMatchLabel.text = "Kills per Match: NA"
                     self.ScorePerMatchLabel.text = "Score per Match: NA"
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
         task.resume()

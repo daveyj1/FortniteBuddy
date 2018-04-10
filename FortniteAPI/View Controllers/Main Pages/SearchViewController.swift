@@ -12,6 +12,7 @@ import Shimmer
 
 class SearchViewController: UIViewController {
     
+    @IBOutlet weak var acivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var ggView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchBox: UITextField!
@@ -27,24 +28,6 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let gview = UIView(frame: CGRect(x: 0, y: 65, width: 400, height: 400))
-//    
-//        let pastelView1 = PastelView(frame: view.bounds)
-//        // Custom Direction
-//        pastelView1.startPastelPoint = .topLeft
-//        pastelView1.endPastelPoint = .topRight
-//        // Custom Duration
-//        pastelView1.animationDuration = 3.0
-//        // Custom Color
-//        pastelView1.setColors([UIColor(red: 113/255, green: 41/255, blue: 159/255, alpha: 1.0),
-//                               UIColor(red: 16/255, green: 33/255, blue: 123/255, alpha: 1.0),
-//                               UIColor(red: 150/255, green: 150/255, blue: 150/255, alpha: 1.0)])
-//        pastelView1.startAnimation()
-//        // add the gradient layer to the views layer for rendering
-//        gview.insertSubview(pastelView1, at: 0)
-//        gview.mask = titleLabel
-//        view.addSubview(gview)
-//        gview.isUserInteractionEnabled = false
         xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
         searchBox.layer.cornerRadius = 15
         goldScar.layer.shadowColor = UIColor.purple.cgColor
@@ -69,10 +52,6 @@ class SearchViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //if (segue.identifier == "ninjaSegue")
-        //{
-            //performSegue(withIdentifier: "ninjaSegue", sender: nil)
-        //}
         if searchBox.text! == "" {
             return
         }

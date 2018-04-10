@@ -11,6 +11,7 @@ target 'FortniteAPI' do
   pod 'Pastel'
   pod 'GradientView', '~> 2.3'
   pod 'Shimmer'
+  pod 'NVActivityIndicatorView'
   target 'FortniteAPITests' do
     inherit! :search_paths
     # Pods for testing
