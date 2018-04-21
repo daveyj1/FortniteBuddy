@@ -8,6 +8,7 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.1.1)
   - Pastel (0.3.0)
   - Shimmer (1.0.2)
+  - SwiftSoup (1.6.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - Pastel
   - Shimmer
+  - SwiftSoup
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -24,7 +26,8 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SwiftSoup: 1eedf56f751b36035ae6c95562f86944c9cfafee
 
-PODFILE CHECKSUM: 11a3a827a16bfd5782fbd1c6f10a8233f4558160
+PODFILE CHECKSUM: 2d8bae4756955809dd26ef9a9350179d42ecda34
 
 COCOAPODS: 1.3.1

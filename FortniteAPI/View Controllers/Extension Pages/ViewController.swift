@@ -8,6 +8,8 @@
 
 import UIKit
 import NVActivityIndicatorView
+import Alamofire
+import SwiftSoup
 
 class ViewController: UIViewController {
     
@@ -41,7 +43,28 @@ class ViewController: UIViewController {
         //let frame = self.view.frame
         activityIndicator.hidesWhenStopped = true
         activityIndicator.color = UIColor.white
-        getSoloStats()
+        //getSoloStats()
+        scrapeHTML()
+    }
+    
+    func scrapeHTML() -> Void {
+        let myURLString = "https://fortnitetracker.com/profile/\(console)/\(username)"
+        guard let myURL = URL(string: myURLString) else {
+            print("Error: \(myURLString) doesn't seem to be a valid URL")
+            return
+        }
+        
+        do {
+            let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
+            let doc: Document = try! SwiftSoup.parse(myHTMLString)
+            let topStats: Element? = try doc.select("div.top-stats").first()?.select("div.value").first()
+            let totalwins = (try topStats?.text())!
+            print(wins)
+            
+        } catch let error {
+            print("Player not found!")
+            //player not found
+        }
     }
     
     func getSoloStats() {

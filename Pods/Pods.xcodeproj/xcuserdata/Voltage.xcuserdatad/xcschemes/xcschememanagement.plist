@@ -7,7 +7,7 @@
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>AlamofireImage.xcscheme</key>
 		<dict>
@@ -18,6 +18,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
@@ -48,6 +53,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>9</integer>
+		</dict>
+		<key>SwiftSoup.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 </dict>

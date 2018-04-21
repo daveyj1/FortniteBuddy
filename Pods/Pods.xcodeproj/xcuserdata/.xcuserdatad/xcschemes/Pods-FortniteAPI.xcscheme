@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CFC4544160951DFEB425F2616E82282D'
+               BlueprintIdentifier = '6DFEA05E2182064B8498D9BF455806D9'
                BlueprintName = 'Pods-FortniteAPI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-FortniteAPI.framework'>

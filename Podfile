@@ -6,6 +6,7 @@ target 'FortniteAPI' do
   use_frameworks!
 
   # Pods for FortniteAPI
+  pod 'SwiftSoup'
   pod 'Alamofire', '~> 4.6'
   pod 'AlamofireImage'
   pod 'Pastel'
