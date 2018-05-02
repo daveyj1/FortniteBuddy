@@ -26,6 +26,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-EG-BgO">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="YQE-aV-ezx"/>
+                                    <constraint firstAttribute="height" constant="50" id="c9e-TR-C4z"/>
+                                </constraints>
+                                <state key="normal" image="icons8-xbox-filled-50"/>
+                                <connections>
+                                    <action selector="pickXbox:" destination="k73-T2-LEh" eventType="touchUpInside" id="kOl-CM-5DF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-ph-jfb">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XvR-YN-YXS"/>
+                                    <constraint firstAttribute="width" constant="50" id="zhc-Xw-RUw"/>
+                                </constraints>
+                                <state key="normal" image="icons8-playstation-filled-50"/>
+                                <connections>
+                                    <action selector="pickPSN:" destination="k73-T2-LEh" eventType="touchUpInside" id="kqw-Dt-VMG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brB-94-Omc">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fDg-wL-aAz"/>
+                                    <constraint firstAttribute="width" constant="50" id="z57-0X-uth"/>
+                                </constraints>
+                                <state key="normal" image="icons8-windows8-filled-50"/>
+                                <connections>
+                                    <action selector="pickPC:" destination="k73-T2-LEh" eventType="touchUpInside" id="Hhd-5e-zwN"/>
+                                </connections>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="fortnitegg" translatesAutoresizingMaskIntoConstraints="NO" id="4iD-jT-gb1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
@@ -42,43 +75,8 @@
                                                 <constraint firstAttribute="width" constant="41" id="aaK-ih-C5T"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="wZk-8o-u3J">
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalCentering" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="wZk-8o-u3J">
                                             <rect key="frame" x="16" y="275.5" width="343" height="50"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-EG-BgO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="YQE-aV-ezx"/>
-                                                        <constraint firstAttribute="height" constant="50" id="c9e-TR-C4z"/>
-                                                    </constraints>
-                                                    <state key="normal" image="icons8-xbox-filled-50"/>
-                                                    <connections>
-                                                        <action selector="pickXbox:" destination="k73-T2-LEh" eventType="touchUpInside" id="kOl-CM-5DF"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-ph-jfb">
-                                                    <rect key="frame" x="146.5" y="0.0" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="XvR-YN-YXS"/>
-                                                        <constraint firstAttribute="width" constant="50" id="zhc-Xw-RUw"/>
-                                                    </constraints>
-                                                    <state key="normal" image="icons8-playstation-filled-50"/>
-                                                    <connections>
-                                                        <action selector="pickPSN:" destination="k73-T2-LEh" eventType="touchUpInside" id="kqw-Dt-VMG"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brB-94-Omc">
-                                                    <rect key="frame" x="293" y="0.0" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="fDg-wL-aAz"/>
-                                                        <constraint firstAttribute="width" constant="50" id="z57-0X-uth"/>
-                                                    </constraints>
-                                                    <state key="normal" image="icons8-windows8-filled-50"/>
-                                                    <connections>
-                                                        <action selector="pickPC:" destination="k73-T2-LEh" eventType="touchUpInside" id="Hhd-5e-zwN"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIY-Xm-YxC">
                                             <rect key="frame" x="130" y="17.5" width="115" height="150"/>
@@ -199,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOQ-o2-Y5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578.26086956521749" y="105.16304347826087"/>
+            <point key="canvasLocation" x="576.79999999999995" y="104.7976011994003"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="xg3-hO-4rq">
@@ -239,6 +237,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vwv-5z-1oE">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.9469569672" green="1" blue="0.00033646567799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="0IH-Wq-b33">
+                                    <rect key="frame" x="0.0" y="143" width="375" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LeaderboardCell" rowHeight="115" id="jxN-gm-6Go" customClass="LeaderboardCell" customModule="FortniteAPI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="115"/>
@@ -294,6 +296,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Leaderboard" id="xd6-Kd-sac"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="0IH-Wq-b33" id="uoA-zP-wHg"/>
                         <outlet property="subView" destination="pa0-o1-Z6c" id="gBr-b9-IbW"/>
                         <outlet property="tableView" destination="Vwv-5z-1oE" id="T97-wR-RCZ"/>
                     </connections>
@@ -543,20 +546,20 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-IF-yTh">
-                                <rect key="frame" x="16" y="232.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-IF-yTh">
+                                <rect key="frame" x="16" y="232.5" width="50" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Average Survival Time: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT6-NV-N2f">
-                                <rect key="frame" x="16" y="274.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Survival Time: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT6-NV-N2f">
+                                <rect key="frame" x="16" y="274.5" width="210" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="0.99997574090957642" blue="0.99999278783798218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kills:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-9m-AVK">
-                                <rect key="frame" x="16" y="313.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kills:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-9m-AVK">
+                                <rect key="frame" x="16" y="313.5" width="44" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -579,26 +582,26 @@
                                     <action selector="selectMatchType:" destination="BYZ-38-t0r" eventType="valueChanged" id="AgB-xX-8xP"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOO-ek-Iqz">
-                                <rect key="frame" x="16" y="353.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOO-ek-Iqz">
+                                <rect key="frame" x="16" y="353.5" width="58.5" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kill/Death:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="254-9N-7IX">
-                                <rect key="frame" x="16" y="393.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kill/Death:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="254-9N-7IX">
+                                <rect key="frame" x="16" y="393.5" width="96.5" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kills per Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf3-f8-Qnw">
-                                <rect key="frame" x="16" y="433.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kills per Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf3-f8-Qnw">
+                                <rect key="frame" x="16" y="433.5" width="143" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Score per Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okE-o0-dSp">
-                                <rect key="frame" x="16" y="473.5" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score per Match:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okE-o0-dSp">
+                                <rect key="frame" x="16" y="473.5" width="157" height="29"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -607,6 +610,10 @@
                         <color key="tintColor" red="0.96475499868392944" green="0.25468475157831416" blue="0.9188590984007754" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="in2-bJ-61Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="09D-et-vsc"/>
+                            <constraint firstItem="j8Z-9m-AVK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0dh-Rg-7MR"/>
+                            <constraint firstItem="254-9N-7IX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2H6-Do-G1w"/>
+                            <constraint firstItem="dT6-NV-N2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="98F-HX-49T"/>
+                            <constraint firstItem="iOO-ek-Iqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9Gw-6d-dOY"/>
                             <constraint firstItem="RRG-pL-2jb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-203.5" id="9kl-n0-EeX"/>
                             <constraint firstItem="iOO-ek-Iqz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34.5" id="IjN-1J-AY8"/>
                             <constraint firstItem="Bf3-f8-Qnw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="114.5" id="Kbb-Hy-yHm"/>
@@ -621,10 +628,13 @@
                             <constraint firstItem="acg-u1-Kmj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f0p-m6-EDy"/>
                             <constraint firstItem="i9h-IF-yTh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-86.5" id="gEE-D1-6JY"/>
                             <constraint firstItem="acg-u1-Kmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gEk-n6-g2j"/>
+                            <constraint firstItem="i9h-IF-yTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gtg-cc-PcJ"/>
+                            <constraint firstItem="Bf3-f8-Qnw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hNi-zF-RPR"/>
                             <constraint firstAttribute="bottom" secondItem="acg-u1-Kmj" secondAttribute="bottom" constant="35" id="iJY-P7-4gP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RRG-pL-2jb" secondAttribute="trailing" constant="16" id="ijd-mm-FDC"/>
                             <constraint firstItem="2do-u0-liC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-145.5" id="kOG-b9-he0"/>
                             <constraint firstItem="okE-o0-dSp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="154.5" id="pMP-ED-fNX"/>
+                            <constraint firstItem="okE-o0-dSp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="phB-my-CkQ"/>
                             <constraint firstItem="in2-bJ-61Z" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tQr-hY-ATG"/>
                             <constraint firstItem="2do-u0-liC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uUi-06-5Ca"/>
                         </constraints>
@@ -1027,11 +1037,11 @@
         <image name="icons8-available-updates-26" width="26" height="26"/>
         <image name="icons8-find-user-male-26" width="26" height="26"/>
         <image name="icons8-leaderboard-26" width="26" height="26"/>
-        <image name="icons8-playstation-filled-50" width="50" height="50"/>
+        <image name="icons8-playstation-filled-50" width="512" height="512"/>
         <image name="icons8-teams-26" width="26" height="26"/>
         <image name="icons8-twitch-32" width="32" height="32"/>
-        <image name="icons8-windows8-filled-50" width="50" height="50"/>
-        <image name="icons8-xbox-filled-50" width="50" height="50"/>
+        <image name="icons8-windows8-filled-50" width="1024" height="1024"/>
+        <image name="icons8-xbox-filled-50" width="512" height="512"/>
         <image name="optic logo" width="600" height="390"/>
     </resources>
     <inferredMetricsTieBreakers>

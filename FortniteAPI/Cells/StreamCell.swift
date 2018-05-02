@@ -18,6 +18,7 @@ class StreamCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        profileImage.image = nil
         self.contentView.backgroundColor = UIColor.clear
     }
 

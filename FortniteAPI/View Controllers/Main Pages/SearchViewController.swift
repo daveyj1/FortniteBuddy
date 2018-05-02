@@ -10,7 +10,7 @@ import UIKit
 import Pastel
 import Shimmer
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var acivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var ggView: UIView!
@@ -28,6 +28,7 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.searchBox.delegate = self
         xboxButton.setImage(#imageLiteral(resourceName: "icons8-xbox-filled-50 (2)"), for: .normal)
         searchBox.layer.cornerRadius = 15
         goldScar.layer.shadowColor = UIColor.purple.cgColor
@@ -47,8 +48,22 @@ class SearchViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        //textField code
+        
+        searchBox.resignFirstResponder()  //if desired
+        performAction()
+        return true
+    }
+    
+    func performAction() {
+        performSegue(withIdentifier: "searchSegue", sender: nil)
+    }
+    
     @IBAction func blah(_ sender: Any) {
         performSegue(withIdentifier: "ninjaSegue", sender: nil)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
